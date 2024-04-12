@@ -45,7 +45,7 @@ params:
           enabled: true
           title: PhD Luca Nigro
           subtitle: "I am a PhD Student at the University of Milan. I work on Quantum Computing, Variational Quantum Algorithms and Quantum Optimization. My PhD is partially funded by ENI S.p.A. and my supervisor is Prof. Enrico Prati."
-          imageUrl: "picture.jpeg"
+          imageUrl: "profile.JPG"
           imageWidth: 160
           imageHeight: 160
           imageTitle: Luca Nigro
