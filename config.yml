@@ -17,21 +17,14 @@ menu:
         - name: Courses
           url: courses/
           weight: 2
-        - name: Data
-          url: data/
-          weight: 3 
-        - name: Newsletter
-          url: https://pmichaillat.substack.com
-          weight: 4
 
 params:
-    description: "I am a Professor of Subject at the University of Place. My research covers various topics.
-consequat."
-    author: Name
+    description: "I am a PhD Student at the University of Milan. I work on Quantum Computing, Variational Quantum Algorithms and Quantum Optimization. My PhD is partially funded by ENI S.p.A. and my supervisor is Prof. Enrico Prati."
+    author: Luca Nigro
     # googleAnalyticsID: "G-XXXXX"
-    DateFormat: "January 2006"
+    DateFormat: "April 2024"
     defaultTheme: light
-    hideFooter: false
+    hideFooter: true
     disableThemeToggle: true
     ShowShareButtons: false
     ShowReadingTime: false
@@ -61,19 +54,12 @@ consequat."
               url: papers/
             - name: Courses
               url: courses/
-            - name: Data
-              url: data/
-            - name: Archive
-              url: archive/
+              
     socialIcons:
         - name: CV
           url: cv.pdf
         - name: Email
           url: mailto:luca.nigro@unimi.it
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=Ys6rJ8gAAAAJ&hl=it
         - name: GitHub
@@ -85,7 +71,7 @@ consequat."
         disableHLJS: true
         disableScrollBarStyle: true
     cover:
-        hiddenInList: false
+        hiddenInList: true
         hiddenInSingle: true
     label:
       text: "Luca Nigro"
