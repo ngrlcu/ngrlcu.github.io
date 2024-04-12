@@ -1,16 +1,16 @@
 ---
-title: "Course Title 1"
-date: 2022-03-10
-tags: ["keyword 1","keyword 2","keyword 3"]
-author: "Prof. Name"
-description: "This graduate course presents things." 
-summary: "This graduate course presents various methods and results." 
+title: "Quantum Simulation"
+date: 2024-04-12
+tags: ["Quantum Computing","Pennylane","DWave"]
+author: "Enrico Prati, Pietro Torta, Luca Nigro"
+description: "This course presents the basics for quantum computing on pennylane and ocean-sdk frameworks." 
+summary: "Half of the lessons are hand-on pennylane framework, the other half is on DWave's OceanSDK." 
 cover:
     image: "course1.png"
     alt: "Figure caption"
     relative: false
 editPost:
-    URL: "https://youtube.com/playlist?list=PL5zEkRHvv2GxQlFbNf-YqSPMP6ePc3DQf"
+    URL: ""
     Text: "YouTube playlist"
 showToc: true
 disableAnchoredHeadings: false
