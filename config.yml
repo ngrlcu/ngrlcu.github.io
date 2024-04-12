@@ -1,5 +1,5 @@
 baseURL: "https://pascalmichaillat.org/hugo-website/" 
-title: Prof. Name
+title: Luca Nigro
 paginate: 20
 theme: PaperMod
 
@@ -50,12 +50,12 @@ consequat."
     math: true
     profileMode:
           enabled: true
-          title: Prof. Namely Name
-          subtitle: "I am a Professor of Subject at the University of Place. I work on various topics. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+          title: PhD Luca Nigro
+          subtitle: "I am a PhD Student at the University of Milan. I work on Quantum Computing, Variational Quantum Algorithms and Quantum Optimization. My PhD is partially funded by ENI S.p.A. and my supervisor is Prof. Enrico Prati."
           imageUrl: "picture.jpeg"
           imageWidth: 160
           imageHeight: 160
-          imageTitle: Prof. Name
+          imageTitle: Luca Nigro
           buttons:
             - name: Papers
               url: papers/
@@ -63,31 +63,23 @@ consequat."
               url: courses/
             - name: Data
               url: data/
-            - name: Newsletter
-              url: https://pmichaillat.substack.com
-            - name: Tags
-              url: tags/
             - name: Archive
               url: archive/
     socialIcons:
         - name: CV
           url: cv.pdf
         - name: Email
-          url: mailto:pascal.michaillat@gmail.com
+          url: mailto:luca.nigro@unimi.it
         - name: Location
           url: location/
         - name: Office Hours
           url: officehours/
         - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
-        - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
+          url: https://scholar.google.com/citations?user=Ys6rJ8gAAAAJ&hl=it
         - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: Twitter
-          url: https://twitter.com/pmichaillat
+          url: https://github.com/ngrlcu
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/luca-nigro-quantum/
 
     assets:
         disableHLJS: true
@@ -96,7 +88,7 @@ consequat."
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Prof. Name"
+      text: "Luca Nigro"
       icon: favicon.ico
       iconHeight: 18
 
