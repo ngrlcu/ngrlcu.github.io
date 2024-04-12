@@ -57,7 +57,7 @@ params:
               
     socialIcons:
         - name: CV
-          url: cv.pdf
+          url: MyCV.pdf
         - name: Email
           url: mailto:luca.nigro@unimi.it
         - name: Google Scholar
