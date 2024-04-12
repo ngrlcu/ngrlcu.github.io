@@ -4,7 +4,7 @@ date: 2024-04-12
 tags: ["Quantum Computing","Pennylane","DWave"]
 author: "Enrico Prati, Pietro Torta, Luca Nigro"
 description: "This course presents the basics for quantum computing on pennylane and ocean-sdk frameworks." 
-summary: "Half of the lessons are hand-on pennylane framework, the other half is on DWave's OceanSDK." 
+summary: "This course presents the basics for quantum computing on pennylane and ocean-sdk frameworks." 
 cover:
     image: "course1.png"
     alt: "Figure caption"
