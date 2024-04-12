@@ -19,7 +19,8 @@ menu:
           weight: 2
 
 params:
-    description: "I am a PhD Student at the University of Milan. I work on Quantum Computing, Variational Quantum Algorithms and Quantum Optimization. My PhD is partially funded by ENI S.p.A. and my supervisor is Prof. Enrico Prati."
+    description:    "I am a PhD Student at the University of Milan. I work on Quantum Computing, Variational Quantum Algorithms and Quantum Optimization." +
+                    "My PhD is partially funded by ENI S.p.A. and my supervisor is Prof. Enrico Prati."
     author: Luca Nigro
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "April 2024"
