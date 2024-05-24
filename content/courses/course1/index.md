@@ -45,7 +45,7 @@ There are three lessons:
   
 ---
 
-## Structural Imbalance in Social Networks
+## QUBO problems
 
 1. QUBO model
 2. AND and NOT logic gates
