@@ -1,13 +1,13 @@
 ---
 title: "Quantum Simulation"
-date: 2024-04-12
+date: 2024-03-1
 tags: ["Quantum Computing","DWave"]
 author: "Enrico Prati, Pietro Torta, Luca Nigro"
 description: "This course presents the basics for quantum computing on pennylane and ocean-sdk frameworks." 
 summary: "This course presents the basics for quantum computing on pennylane and ocean-sdk frameworks." 
 cover:
-    image: "course1.png"
-    alt: "Figure caption"
+    image: "D-Wave_Systems_logo.svg"
+    alt: ""
     relative: false
 editPost:
     URL: ""
