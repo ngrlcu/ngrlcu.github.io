@@ -23,6 +23,7 @@ params:
     author: Luca Nigro
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "April 2024"
+    # themese: "responsive", "simple", "clean", "light", "dark", "blog", "minimalist", "highlight.js", "search"
     defaultTheme: light
     hideFooter: true
     disableThemeToggle: true
