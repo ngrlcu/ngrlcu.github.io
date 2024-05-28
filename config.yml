@@ -24,7 +24,7 @@ params:
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "April 2024"
     # themese: "responsive", "simple", "clean", "light", "dark", "blog", "minimalist", "highlight.js", "search"
-    defaultTheme: light
+    defaultTheme: minimalist
     hideFooter: true
     disableThemeToggle: true
     ShowShareButtons: false
