@@ -1,6 +1,6 @@
 ---
 title: "Quantum digital simulation of the nuclear de-excitation of tritium" 
-date: 2024-03-03
+date: 03-03-24
 tags: ["VQE","LCU","pionless-EFT"]
 author: "Luca Nigro, Enrico Prati"
 description: "Abstract" 
