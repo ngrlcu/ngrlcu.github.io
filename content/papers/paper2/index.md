@@ -1,6 +1,6 @@
 ---
 title: "Simulation of a nuclear process on a quantum computer" 
-date: "2024-08-01"
+date: "08-01-2024"
 tags: ["VQE","LCU","pionless-EFT"]
 author: "Luca Nigro, Carlo Barbieri, Enrico Prati"
 description: "Preprint" 
@@ -10,8 +10,8 @@ cover:
     alt: ""
     relative: false
 editPost:
-    URL: "[arXiv:2408.01943](https://arxiv.org/abs/2408.01943)"
-    Text: "[arXiv [quant-ph]](https://arxiv.org/abs/2408.01943)"
+    URL: "https://arxiv.org/abs/2408.01943"
+    Text: "arXiv:2408.01943 [quant-ph]"
 
 ---
 
