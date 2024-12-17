@@ -1,21 +1,21 @@
 ---
-title: "Quantum digital simulation of the nuclear de-excitation of tritium" 
-date: 03-03-2024
-tags: ["VQE","LCU","pionless-EFT"]
-author: "Luca Nigro, Enrico Prati"
-description: "Abstract" 
-summary: "Abstract" 
+title: "Leveraging non-unital noise for gate-based quantum reservoir computing" 
+date: 12-09-2024
+tags: ["Quantum Reservoir Computing","Echo State Network","Quantum Noise"]
+author: "Francesco Monzani, Emanuele Ricci, Luca Nigro, Enrico Prati"
+description: "Preprint" 
+summary: "" 
 cover:
     image: ""
     alt: ""
     relative: false
 editPost:
-    URL: "[MarchMeeting24](https://meetings.aps.org/Meeting/MAR24/Session/A50.9)"
-    Text: "Bulletin of the American Physical Society"
+    URL: "https://doi.org/10.48550/arXiv.2409.07886"
+    Text: "ArXiv"
 
 ---
 
 ##### Abstract
 
-The description of nuclear processes requires knowledge of the quantum state of the nucleus, which is often difficult to address analytically. Quantum computing algorithms can prepare the qubits in such a way that encodes the state of the nuclei and also by simulating the action of observables on such states. We show that quantum computers may embed a full simulation. Here we show the pipeline of processes that allow to simulate a nuclear transition from state preparation to photon emission. It is already known how to prepare quantum states of a deuterium nucleus by using a quantum computer, as well as how to evaluate the probability of the transition between such states. If the quantum states are not known a priori, the most common algorithms that find them are the variational quantum eigensolver for the ground state and its variations for the excited states, respectively. We combine the methods so to determine the ground state and first excited state by using hybrid quantum-classical computing. We estimate a relative error of ∼ 2% for the ground state energy eigenvalue and ∼ 10% for the first excited state, respectively. The transition probability between the two levels reaches the maximum for dipole polarization angle at around 2.8 rad. This work is a first step towards a quantum digital simulation pipeline in nuclear physics. Our work can be extended to other quantum systems, such as quantum chemistry, atomic physics and photonics.
+We identify a noise model that ensures the functioning of an echo state network employing a gate-based quantum computer for reservoir computing applications. Energy dissipation induced by amplitude damping drastically improves the short-term memory capacity and expressivity of the network, by simultaneously providing fading memory and richer dynamics. There is an ideal dissipation rate that ensures the best operation of the echo state network around γ ∼ 0.03. Nevertheless, these beneficial effects are stable as the intensity of the applied noise increases. The improvement of the learning is confirmed by emulating a realistic noise model applied to superconducting qubits, paving the way for the application of reservoir computing methods in current non-fault-tolerant quantum computers.
 
