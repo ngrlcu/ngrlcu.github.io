@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.93d5c563.css",
-    "main.js": "/react-gh-pages/static/js/main.416867bf.js",
-    "static/js/453.b05d8aa5.chunk.js": "/react-gh-pages/static/js/453.b05d8aa5.chunk.js",
-    "static/media/tromso_128.png": "/react-gh-pages/static/media/tromso_128.2019d4442c6efce5085c.png",
-    "static/media/yosemite_13.png": "/react-gh-pages/static/media/yosemite_13.2ebad469531205095b62.png",
-    "static/media/cervice_35.png": "/react-gh-pages/static/media/cervice_35.cf8ca5ba01e83dd8dc07.png",
-    "static/media/trolling_225.png": "/react-gh-pages/static/media/trolling_225.fcf7e94079f0d9f83774.png",
-    "static/media/kjerag_73.png": "/react-gh-pages/static/media/kjerag_73.a5fc50969445447e4b00.png",
-    "static/media/deathvalley_38.png": "/react-gh-pages/static/media/deathvalley_38.de8f8f968aca2f2e808d.png",
-    "static/media/sequoia_37.png": "/react-gh-pages/static/media/sequoia_37.fab7d0a8aca3635bb682.png",
-    "static/media/mojave_36.png": "/react-gh-pages/static/media/mojave_36.c74f7716f1b1c4d9170f.png",
-    "static/media/deathvalley_10.png": "/react-gh-pages/static/media/deathvalley_10.b854a0474239289e15e2.png",
-    "static/media/aps25.png": "/react-gh-pages/static/media/aps25.588d8029bea37b0df393.png",
-    "static/media/CINECA23.png": "/react-gh-pages/static/media/CINECA23.e4925e68a774ffc6c122.png",
-    "static/media/paper_nigro24.png": "/react-gh-pages/static/media/paper_nigro24.345d5fbe639b52e2f2fb.png",
-    "static/media/propic.png": "/react-gh-pages/static/media/propic.7c826d841c2c4cbb8b1a.png",
-    "static/media/paper_monz24.png": "/react-gh-pages/static/media/paper_monz24.0d796e81de1c32a12dbc.png",
-    "static/media/aps24.png": "/react-gh-pages/static/media/aps24.e33d0934d096d6139b62.png",
-    "index.html": "/react-gh-pages/index.html",
-    "main.93d5c563.css.map": "/react-gh-pages/static/css/main.93d5c563.css.map",
-    "main.416867bf.js.map": "/react-gh-pages/static/js/main.416867bf.js.map",
-    "453.b05d8aa5.chunk.js.map": "/react-gh-pages/static/js/453.b05d8aa5.chunk.js.map"
+    "main.css": "/ngrlcu.github.io/static/css/main.93d5c563.css",
+    "main.js": "/ngrlcu.github.io/static/js/main.a90c712c.js",
+    "static/js/453.b05d8aa5.chunk.js": "/ngrlcu.github.io/static/js/453.b05d8aa5.chunk.js",
+    "static/media/tromso_128.png": "/ngrlcu.github.io/static/media/tromso_128.2019d4442c6efce5085c.png",
+    "static/media/yosemite_13.png": "/ngrlcu.github.io/static/media/yosemite_13.2ebad469531205095b62.png",
+    "static/media/cervice_35.png": "/ngrlcu.github.io/static/media/cervice_35.cf8ca5ba01e83dd8dc07.png",
+    "static/media/trolling_225.png": "/ngrlcu.github.io/static/media/trolling_225.fcf7e94079f0d9f83774.png",
+    "static/media/kjerag_73.png": "/ngrlcu.github.io/static/media/kjerag_73.a5fc50969445447e4b00.png",
+    "static/media/deathvalley_38.png": "/ngrlcu.github.io/static/media/deathvalley_38.de8f8f968aca2f2e808d.png",
+    "static/media/sequoia_37.png": "/ngrlcu.github.io/static/media/sequoia_37.fab7d0a8aca3635bb682.png",
+    "static/media/mojave_36.png": "/ngrlcu.github.io/static/media/mojave_36.c74f7716f1b1c4d9170f.png",
+    "static/media/deathvalley_10.png": "/ngrlcu.github.io/static/media/deathvalley_10.b854a0474239289e15e2.png",
+    "static/media/aps25.png": "/ngrlcu.github.io/static/media/aps25.588d8029bea37b0df393.png",
+    "static/media/CINECA23.png": "/ngrlcu.github.io/static/media/CINECA23.e4925e68a774ffc6c122.png",
+    "static/media/paper_nigro24.png": "/ngrlcu.github.io/static/media/paper_nigro24.345d5fbe639b52e2f2fb.png",
+    "static/media/propic.png": "/ngrlcu.github.io/static/media/propic.7c826d841c2c4cbb8b1a.png",
+    "static/media/paper_monz24.png": "/ngrlcu.github.io/static/media/paper_monz24.0d796e81de1c32a12dbc.png",
+    "static/media/aps24.png": "/ngrlcu.github.io/static/media/aps24.e33d0934d096d6139b62.png",
+    "index.html": "/ngrlcu.github.io/index.html",
+    "main.93d5c563.css.map": "/ngrlcu.github.io/static/css/main.93d5c563.css.map",
+    "main.a90c712c.js.map": "/ngrlcu.github.io/static/js/main.a90c712c.js.map",
+    "453.b05d8aa5.chunk.js.map": "/ngrlcu.github.io/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93d5c563.css",
-    "static/js/main.416867bf.js"
+    "static/js/main.a90c712c.js"
   ]
 }
