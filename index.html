@@ -1,0 +1,61 @@
+---
+layout: default
+title: About
+---
+<section class="intro">
+  {%- if site.portrait and site.portrait != "" %}
+  <img class="portrait" src="{{ site.portrait | relative_url }}" alt="{{ site.author.name }}" width="96" height="96">
+  {%- endif %}
+  <p class="lede">
+    I'm a physicist working on <em>quantum reservoir computing</em>: using the
+    natural, noisy dynamics of Rydberg atom arrays as a computer, rather than
+    fighting them.
+  </p>
+  <p>
+    I'm a PhD student in Milan, where I also study where quantum computing can
+    genuinely matter for the energy industry, and where it can't. I collaborate
+    with the quantum group at <a href="https://ifisc.uib-csic.es">IFISC</a> in
+    Palma de Mallorca. Most of my days go into open quantum systems: Lindblad
+    dynamics, dark states and dissipation as a resource.
+  </p>
+  <p>
+    Away from the desk I shoot film, point a star tracker at a light-polluted
+    sky, and keep a <a href="{{ '/journal/' | relative_url }}">journal</a> of
+    places and photographs.
+  </p>
+  <ul class="inline-links">
+    {%- for l in site.links %}
+    <li><a href="{{ l.url }}">{{ l.title }}</a></li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2 class="label">Now</h2>
+  <p>
+    Writing up my thesis and a paper on analog reservoir computing with
+    neutral atoms. Reading about the geometry of density matrices.
+  </p>
+</section>
+
+{%- if site.data.news %}
+<section>
+  <h2 class="label">News</h2>
+  <ul class="rows">
+    {%- for n in site.data.news limit: 5 %}
+    <li class="row"><span class="when">{{ n.date | date: "%b %Y" }}</span><span>{{ n.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}
+
+{%- if site.posts.size > 0 %}
+<section>
+  <h2 class="label">From the journal <a class="label-link" href="{{ '/journal/' | relative_url }}">All entries →</a></h2>
+  <ul class="rows">
+    {%- for post in site.posts limit: 3 %}
+    <li class="row"><span class="when">{{ post.date | date: "%b %Y" }}</span><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}

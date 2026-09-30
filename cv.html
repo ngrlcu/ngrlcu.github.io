@@ -1,0 +1,30 @@
+---
+layout: default
+title: CV
+permalink: /cv/
+---
+<header class="page-head">
+  <h1>Curriculum vitae</h1>
+  {%- if site.data.cv.pdf and site.data.cv.pdf != "" %}
+  <a class="chip" href="{{ site.data.cv.pdf | relative_url }}">Download PDF</a>
+  {%- endif %}
+</header>
+
+{%- for section in site.data.cv.sections %}
+<section class="cv-section">
+  <h2 class="label">{{ section.title }}</h2>
+  <ul class="rows{% if section.compact %} compact{% endif %}">
+    {%- for item in section.items %}
+    <li class="row">
+      <span class="when">{{ item.when }}</span>
+      <div>
+        <p class="what">{{ item.what }}{% if item.where %} <span class="where">{{ item.where }}</span>{% endif %}</p>
+        {%- if item.note %}
+        <div class="note">{{ item.note | markdownify }}</div>
+        {%- endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}

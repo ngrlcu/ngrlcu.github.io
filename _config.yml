@@ -1,0 +1,53 @@
+# ─────────────────────────────────────────────────────────────
+#  Site settings — edit these first
+# ─────────────────────────────────────────────────────────────
+title: Luca Nigro
+tagline: Physicist — quantum dynamics, computation, and the odd photograph.
+description: >-
+  Luca Nigro — PhD student in physics in Milan, working on analog quantum
+  reservoir computing with Rydberg atom arrays and quantum computing for energy.
+lang: en
+
+# For a user site (repo named <username>.github.io): url is https://<username>.github.io and baseurl is "".
+# For a project site (any other repo name): baseurl is "/<repo-name>".
+url: "https://yourusername.github.io"
+baseurl: ""
+
+author:
+  name: Luca Nigro
+  short: L. Nigro          # bolded automatically in author lists on the Papers page
+
+# Optional square portrait shown on the About page. Leave empty for none.
+portrait: ""               # e.g. /assets/img/portrait.jpg
+
+# Links under the bio on the About page (and in the footer).
+links:
+  - title: Email
+    url: "mailto:your.name@unimi.it"
+  - title: Google Scholar
+    url: "https://scholar.google.com/"
+  - title: arXiv
+    url: "https://arxiv.org/a/"
+  - title: GitHub
+    url: "https://github.com/yourusername"
+  - title: ORCID
+    url: "https://orcid.org/"
+
+# ─────────────────────────────────────────────────────────────
+#  Build settings — normally no need to touch
+# ─────────────────────────────────────────────────────────────
+permalink: /journal/:year/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+feed:
+  path: journal/feed.xml
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

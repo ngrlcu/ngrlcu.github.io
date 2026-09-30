@@ -1,0 +1,56 @@
+---
+layout: default
+title: Papers
+permalink: /papers/
+---
+<header class="page-head">
+  <h1>Papers</h1>
+  {%- assign scholar = site.links | where: "title", "Google Scholar" | first %}
+  {%- if scholar %}<a class="chip" href="{{ scholar.url }}">Google Scholar</a>{% endif %}
+</header>
+
+{%- assign me = site.author.short | default: site.author.name -%}
+{%- assign bold_me = "<b>" | append: me | append: "</b>" -%}
+{%- assign years = site.data.papers | group_by: "year" -%}
+{%- for group in years %}
+<section class="paper-year">
+  <h2 class="label">{{ group.name }}</h2>
+  <ol class="papers">
+    {%- for p in group.items %}
+    <li class="paper">
+      <p class="paper-title">{% if p.links.arxiv and p.links.arxiv != "" %}<a href="{{ p.links.arxiv }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
+      <p class="paper-authors">{{ p.authors | replace: me, bold_me }}</p>
+      <p class="paper-venue">{{ p.venue }}</p>
+      <div class="paper-links">
+        {%- for l in p.links %}{% if l[1] and l[1] != "" %}
+        <a class="chip" href="{{ l[1] }}">{% case l[0] %}{% when "arxiv" %}arXiv{% when "pdf" %}PDF{% when "doi" %}DOI{% else %}{{ l[0] | capitalize }}{% endcase %}</a>
+        {%- endif %}{% endfor %}
+        {%- if p.abstract %}
+        <button class="chip" type="button" aria-expanded="false" data-panel="abstract">Abstract</button>
+        {%- endif %}
+        {%- if p.bibtex %}
+        <button class="chip" type="button" aria-expanded="false" data-panel="bibtex">BibTeX</button>
+        {%- endif %}
+      </div>
+      {%- if p.abstract %}
+      <p class="paper-abstract" data-panel="abstract" hidden>{{ p.abstract }}</p>
+      {%- endif %}
+      {%- if p.bibtex %}
+      <pre class="bibtex" data-panel="bibtex" hidden>{{ p.bibtex | strip | xml_escape }}</pre>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ol>
+</section>
+{%- endfor %}
+
+<script>
+  document.querySelectorAll(".paper button[data-panel]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var panel = btn.closest(".paper").querySelector('[data-panel="' + btn.dataset.panel + '"]:not(button)');
+      var open = btn.getAttribute("aria-expanded") !== "true";
+      btn.setAttribute("aria-expanded", open);
+      panel.hidden = !open;
+    });
+  });
+</script>
