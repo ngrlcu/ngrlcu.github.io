@@ -1,0 +1,13 @@
+# Short dated items shown on the About page (newest first). Markdown allowed.
+- date: 2026-07-01
+  text: Talk at the MDPI Entropy Conference in Barcelona.
+- date: 2026-05-01
+  text: "*Quantum reservoir computing induced by controllable damping* published in [npj Quantum Information](https://doi.org/10.1038/s41534-026-01229-8)."
+- date: 2026-02-28
+  text: Back from six months at [IFISC](https://ifisc.uib-csic.es) in Palma de Mallorca, working on quantum reservoir computing.
+- date: 2025-09-29
+  text: "*Leveraging quantum annealing for layout optimization* published in [Advanced Quantum Technologies](https://doi.org/10.1002/qute.202500358)."
+- date: 2025-03-01
+  text: Talk on quantum annealing for layout optimisation at the APS Global Physics Summit, Anaheim.
+- date: 2024-12-11
+  text: "*Simulation of a three-nucleons system transition on quantum circuits* published in [Advanced Quantum Technologies](https://doi.org/10.1002/qute.202400371)."

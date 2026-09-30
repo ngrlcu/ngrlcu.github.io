@@ -1,51 +1,73 @@
 ---
 layout: default
-title: About
+title: Journal
+permalink: /journal/
+width: wide
+description: Travel notes, photographs and the occasional essay.
 ---
-<section class="intro">
-  {%- if site.portrait and site.portrait != "" %}
-  <img class="portrait" src="{{ site.portrait | relative_url }}" alt="{{ site.author.name }}" width="96" height="96">
-  {%- endif %}
-  <p class="lede">
-    I'm a physicist working on <em>quantum machine learning</em>: using
-    quantum mechanics to find hidden learning techniques.
-  </p>
-  <p>
-    Away from the desk I take photos around the world and keep a <a href="{{ '/journal/' | relative_url }}">journal</a> of
-    places.
-  </p>
-  <ul class="inline-links">
-    {%- for l in site.links %}
-    <li><a href="{{ l.url }}">{{ l.title }}</a></li>
+<header class="journal-head">
+  <div>
+    <h1>Journal</h1>
+    <p class="dek">{{ page.description }}</p>
+  </div>
+  <nav class="filters" aria-label="Filter entries">
+    <button type="button" data-filter="all" aria-pressed="true">All</button>
+    {%- for c in site.data.categories %}
+    <button type="button" data-filter="{{ c[0] }}" aria-pressed="false">{{ c[1].title }}</button>
     {%- endfor %}
-  </ul>
-</section>
+  </nav>
+</header>
 
-<section>
-  <h2 class="label">Now</h2>
-  <p>
-    On my way towards Santiago de Compostela.
-  </p>
-</section>
+{%- assign featured = site.posts | where: "featured", true | first | default: site.posts.first -%}
 
-{%- if site.data.news %}
-<section>
-  <h2 class="label">News</h2>
-  <ul class="rows">
-    {%- for n in site.data.news limit: 5 %}
-    <li class="row"><span class="when">{{ n.date | date: "%b %Y" }}</span><span>{{ n.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></li>
-    {%- endfor %}
-  </ul>
-</section>
+{%- if featured %}
+<a class="feature entry" data-cat="{{ featured.category }}" href="{{ featured.url | relative_url }}">
+  {%- if featured.cover %}<img src="{{ featured.cover | relative_url }}" alt="{{ featured.cover_alt | default: '' }}">{% endif %}
+  <div class="feature-text">
+    <p class="kicker">{{ site.data.categories[featured.category].title | default: featured.category }} · {{ featured.date | date: "%B %Y" }}{% if featured.location %} · {{ featured.location }}{% endif %}</p>
+    <h2>{{ featured.title }}</h2>
+    <p class="dek">{{ featured.dek | default: featured.excerpt | strip_html | truncatewords: 30 }}</p>
+  </div>
+</a>
 {%- endif %}
 
-{%- if site.posts.size > 0 %}
-<section>
-  <h2 class="label">From the journal <a class="label-link" href="{{ '/journal/' | relative_url }}">All entries →</a></h2>
-  <ul class="rows">
-    {%- for post in site.posts limit: 3 %}
-    <li class="row"><span class="when">{{ post.date | date: "%b %Y" }}</span><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-    {%- endfor %}
-  </ul>
-</section>
-{%- endif %}
+<div class="grid">
+  {%- for post in site.posts %}
+  {%- if post.url == featured.url %}{% continue %}{% endif %}
+  <a class="card entry" data-cat="{{ post.category }}" href="{{ post.url | relative_url }}">
+    {%- if post.cover %}<img src="{{ post.cover | relative_url }}" alt="{{ post.cover_alt | default: '' }}" loading="lazy">{% endif %}
+    <p class="kicker">{{ site.data.categories[post.category].title | default: post.category }} · {{ post.date | date: "%b %Y" }}</p>
+    <h3>{{ post.title }}</h3>
+    {%- if post.dek %}<p class="dek">{{ post.dek }}</p>{% endif %}
+  </a>
+  {%- endfor %}
+</div>
+
+<p class="empty" hidden>Nothing here yet.</p>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll(".filters button");
+    var entries = document.querySelectorAll(".entry");
+    var empty = document.querySelector(".empty");
+    function apply(cat) {
+      var shown = 0;
+      buttons.forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.filter === cat); });
+      entries.forEach(function (e) {
+        var on = cat === "all" || e.dataset.cat === cat;
+        e.hidden = !on; if (on) shown++;
+      });
+      empty.hidden = shown > 0;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener("click", function () {
+        apply(b.dataset.filter);
+        var url = new URL(location.href);
+        if (b.dataset.filter === "all") url.searchParams.delete("c"); else url.searchParams.set("c", b.dataset.filter);
+        history.replaceState(null, "", url);
+      });
+    });
+    var start = new URLSearchParams(location.search).get("c");
+    if (start && document.querySelector('[data-filter="' + start + '"]')) apply(start);
+  })();
+</script>

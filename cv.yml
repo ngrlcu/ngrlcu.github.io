@@ -1,0 +1,115 @@
+# ─────────────────────────────────────────────────────────────
+#  CV — from Luca's résumé (30 Sep 2026).
+#  Each section is a list of rows: `when` sits in the left column,
+#  `what` is the bold line, `where` sits beside it, `note` below (Markdown ok).
+# ─────────────────────────────────────────────────────────────
+pdf: ""                    # to offer a download, put a PDF at assets/cv.pdf and set this to /assets/cv.pdf
+
+sections:
+  - title: Experience
+    items:
+      - when: 2023 — 2026
+        what: PhD researcher
+        where: Università degli Studi di Milano
+        note: >-
+          Quantum simulation, quantum optimisation and quantum machine learning.
+          Algorithms developed and benchmarked with Qiskit, PennyLane, Ocean,
+          Pulser and Bloqade. PhD co-funded by Eni S.p.A.
+      - when: 2025 — 2026
+        what: Visiting researcher
+        where: IFISC (UIB–CSIC), Palma de Mallorca
+        note: >-
+          Neutral-atom quantum reservoir computing with Roberta Zambrini and
+          Gian Luca Giorgi (Sep 2025 – Feb 2026).
+      - when: 2024 — 2026
+        what: Teaching assistant, Foundations of Quantum Computing
+        where: Università degli Studi di Milano
+        note: >-
+          Interactive Jupyter notebooks and hands-on lectures across quantum
+          frameworks for MSc students; guidance on thesis projects.
+      - when: 2025 — 2026
+        what: STEM orientation lecturer
+        where: Università degli Studi di Milano
+        note: >-
+          Introductory lectures on quantum technologies and AI for high-school
+          students, and guidance on university study paths.
+      - when: 2023 — 2026
+        what: Linux system administrator
+        where: Quantum Intelligence Lab, Università degli Studi di Milano
+        note: Set-up and maintenance of the group's Linux research workstations and computing resources.
+
+  - title: Education
+    items:
+      - when: 2023 — 2026
+        what: PhD in Physics
+        where: Università degli Studi di Milano
+        note: "Topic: *Next generation of quantum algorithms for optimisation and quantum chemistry*."
+      - when: 2020 — 2023
+        what: MSc in Physics, 110/110 cum laude
+        where: Università degli Studi di Milano
+        note: "Thesis: *Simulation of Nuclear Reactions by a Gate Model Quantum Computer*."
+      - when: 2022 — 2023
+        what: Erasmus+
+        where: University of Oslo
+        note: Complex media, space physics and computational physics.
+      - when: 2016 — 2020
+        what: BSc in Physics
+        where: Università degli Studi di Milano-Bicocca
+        note: "Thesis: *Study of HUBO Problems on Adiabatic Quantum Computers*."
+
+  - title: Talks & posters
+    items:
+      - when: Jul 2026
+        what: MDPI Entropy Conference
+        where: Barcelona — talk
+      - when: Mar 2025
+        what: APS Global Physics Summit
+        where: Anaheim — talk
+      - when: Sep 2024
+        what: DICE 2024
+        where: Castiglioncello — poster
+      - when: Sep 2024
+        what: EQAI Summer School
+        where: Lignano Sabbiadoro — poster
+      - when: Mar 2024
+        what: APS March Meeting
+        where: Minneapolis — talk
+      - when: Dec 2023
+        what: CINECA HPC & QC Workshop
+        where: Bologna — talk
+
+  - title: Scientific service
+    items:
+      - when: 2026
+        what: Peer reviewer
+        where: Quantum Machine Intelligence
+      - when: 2025
+        what: Master's thesis tutor
+        where: MSc in Artificial Intelligence for Science and Technology, Milan
+      - when: 2025
+        what: Peer reviewer
+        where: Quantum Information Processing
+      - when: 2025
+        what: Abstract sorter
+        where: Joint APS March & April Meeting
+      - when: 2024
+        what: Peer reviewer
+        where: Quantum Machine Intelligence
+      - when: 2024
+        what: Co-organiser and chair
+        where: CINECA HPC & QC Workshop, Bologna
+      - when: 2024
+        what: Secretary
+        where: DICE 2024 — Quo Vadis, Fisica?, Castiglioncello
+
+  - title: Skills
+    compact: true
+    items:
+      - when: Programming
+        what: Python, Julia, C++, JavaScript, HTML, CSS
+      - when: Quantum SDKs
+        what: Qiskit, Cirq, PennyLane, D-Wave Leap, Pulser, Bloqade
+      - when: Tools
+        what: Git, Linux and Bash, SSH, Jupyter, LaTeX
+      - when: Languages
+        what: Italian (native), English (C2), Spanish (B1)

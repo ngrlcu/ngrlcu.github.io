@@ -18,7 +18,8 @@ permalink: /papers/
   <ol class="papers">
     {%- for p in group.items %}
     <li class="paper">
-      <p class="paper-title">{% if p.links.arxiv and p.links.arxiv != "" %}<a href="{{ p.links.arxiv }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
+      {%- assign main = p.links.doi | default: p.links.arxiv | default: p.links.pdf %}
+      <p class="paper-title">{% if main and main != "" %}<a href="{{ main }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
       <p class="paper-authors">{{ p.authors | replace: me, bold_me }}</p>
       <p class="paper-venue">{{ p.venue }}</p>
       <div class="paper-links">

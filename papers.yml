@@ -1,0 +1,87 @@
+# ─────────────────────────────────────────────────────────────
+#  Papers — newest first; grouped by `year`.
+#  Every field except title/authors/year is optional; empty links are hidden.
+# ─────────────────────────────────────────────────────────────
+- title: Non-Markovian dissipative quantum dynamics for temporal information processing
+  authors: L. Nigro, F. Monzani, E. Prati
+  venue: Forthcoming
+  year: 2026
+
+- title: Analog quantum reservoir computing on neutral atoms from first principles
+  authors: L. Nigro, G. L. Giorgi, E. Prati, R. Zambrini
+  venue: Forthcoming
+  year: 2026
+
+- title: Quantum reservoir computing induced by controllable damping
+  authors: E. Ricci, F. Monzani, L. Nigro, E. Prati
+  venue: npj Quantum Information
+  year: 2026
+  links:
+    doi: "https://doi.org/10.1038/s41534-026-01229-8"
+    arxiv: "https://arxiv.org/abs/2508.14621"
+  abstract: >-
+    Controlled rotations induce tunable damping in quantum circuits, giving
+    stable, non-unital reservoir dynamics for temporal information processing
+    without relying on intrinsic hardware noise.
+  bibtex: |
+    @article{ricci2026damping,
+      title   = {Quantum reservoir computing induced by controllable damping},
+      author  = {Ricci, Emanuele and Monzani, Francesco and Nigro, Luca and Prati, Enrico},
+      journal = {npj Quantum Information},
+      year    = {2026},
+      doi     = {10.1038/s41534-026-01229-8}
+    }
+
+- title: Leveraging quantum annealing for layout optimization
+  authors: L. Nigro, S. Sala, A. Amendola, E. Prati
+  venue: Advanced Quantum Technologies 8, e00358
+  year: 2025
+  links:
+    doi: "https://doi.org/10.1002/qute.202500358"
+  abstract: >-
+    Wind-farm layout optimisation cast as a QUBO and solved by quantum annealing
+    reaches solutions an order of magnitude faster than Gurobi, with at most 3%
+    lower power output.
+  bibtex: |
+    @article{nigro2025layout,
+      title   = {Leveraging Quantum Annealing for Layout Optimization},
+      author  = {Nigro, Luca and Sala, Simone and Amendola, Alfonso and Prati, Enrico},
+      journal = {Advanced Quantum Technologies},
+      volume  = {8},
+      pages   = {e00358},
+      year    = {2025},
+      doi     = {10.1002/qute.202500358}
+    }
+
+- title: Simulation of a three-nucleons system transition on quantum circuits
+  authors: L. Nigro, C. Barbieri, E. Prati
+  venue: Advanced Quantum Technologies 8, 2400371
+  year: 2025
+  links:
+    doi: "https://doi.org/10.1002/qute.202400371"
+    arxiv: "https://arxiv.org/abs/2408.01943"
+  abstract: >-
+    A complete nuclear transition in tritium on a gate-based quantum computer:
+    variational preparation of ground and excited states, and the magnetic-dipole
+    transition probability via a linear combination of unitaries.
+  bibtex: |
+    @article{nigro2025tritium,
+      title   = {Simulation of a Three-Nucleons System Transition on Quantum Circuits},
+      author  = {Nigro, Luca and Barbieri, Carlo and Prati, Enrico},
+      journal = {Advanced Quantum Technologies},
+      volume  = {8},
+      pages   = {2400371},
+      year    = {2025},
+      doi     = {10.1002/qute.202400371}
+    }
+
+- title: Non-unital noise in a superconducting quantum computer as a computational resource for reservoir computing
+  authors: F. Monzani, E. Ricci, L. Nigro, E. Prati
+  venue: arXiv:2409.07886
+  year: 2025
+  links:
+    arxiv: "https://arxiv.org/abs/2409.07886"
+  abstract: >-
+    Amplitude-damping noise, modelled as a non-unital channel, improves reservoir
+    computing on time-dependent tasks by preventing the information loss caused
+    by mid-circuit measurements.

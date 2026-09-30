@@ -1,0 +1,21 @@
+<footer class="site-footer shell {{ include.width }}">
+  <span>© {{ site.time | date: "%Y" }} {{ site.author.name }}</span>
+  <span class="footer-links">
+    <a href="{{ '/journal/feed.xml' | relative_url }}">RSS</a>
+    <button class="theme-toggle" type="button" aria-label="Switch colour theme">Theme: <span>auto</span></button>
+  </span>
+</footer>
+<script>
+  (function () {
+    var root = document.documentElement, btn = document.querySelector(".theme-toggle");
+    var order = ["auto", "light", "dark"];
+    function show() { btn.querySelector("span").textContent = root.dataset.theme || "auto"; }
+    btn.addEventListener("click", function () {
+      var next = order[(order.indexOf(root.dataset.theme || "auto") + 1) % order.length];
+      if (next === "auto") delete root.dataset.theme; else root.dataset.theme = next;
+      try { next === "auto" ? localStorage.removeItem("theme") : localStorage.setItem("theme", next); } catch (e) {}
+      show();
+    });
+    show();
+  })();
+</script>
