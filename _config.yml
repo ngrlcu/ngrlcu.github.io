@@ -10,7 +10,7 @@ lang: en
 
 # For a user site (repo named <username>.github.io): url is https://<username>.github.io and baseurl is "".
 # For a project site (any other repo name): baseurl is "/<repo-name>".
-url: "https://yourusername.github.io"
+url: "https://ngrlcu.github.io"
 baseurl: ""
 
 author:
