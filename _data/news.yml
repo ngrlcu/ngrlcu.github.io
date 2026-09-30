@@ -1,0 +1,10 @@
+# Short dated items shown on the About page (newest first). Markdown allowed.
+# EDIT ME — these are examples.
+- date: 2026-09-15
+  text: Started drafting the last part of my thesis, *Quantum Computing for the Energy Industry*.
+- date: 2026-07-01
+  text: Back from a research visit at [IFISC](https://ifisc.uib-csic.es) in Palma de Mallorca.
+- date: 2026-05-20
+  text: Talk on analog quantum reservoir computing with Rydberg arrays at a group seminar.
+- date: 2026-02-10
+  text: Review on quantum computing for energy applications submitted.

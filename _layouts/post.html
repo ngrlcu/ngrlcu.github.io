@@ -1,0 +1,38 @@
+---
+layout: default
+width: wide
+---
+{%- assign cat = site.data.categories[page.category] -%}
+<article class="post">
+  <header class="measure post-head">
+    <p class="kicker">
+      <a href="{{ '/journal/' | relative_url }}?c={{ page.category }}">{{ cat.title | default: page.category }}</a>
+      <span aria-hidden="true">·</span> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+      {%- if page.location %} <span aria-hidden="true">·</span> {{ page.location }}{% endif %}
+    </p>
+    <h1>{{ page.title }}</h1>
+    {%- if page.dek %}
+    <p class="dek">{{ page.dek }}</p>
+    {%- endif %}
+  </header>
+
+  {%- if page.cover %}
+  <figure class="cover">
+    <img src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: '' }}">
+    {%- if page.cover_caption %}<figcaption>{{ page.cover_caption }}</figcaption>{% endif %}
+  </figure>
+  {%- endif %}
+
+  <div class="measure prose">
+    {{ content }}
+  </div>
+
+  <nav class="measure post-nav" aria-label="More entries">
+    {%- if page.previous %}
+    <a class="prev" href="{{ page.previous.url | relative_url }}"><span class="kicker">Older</span>{{ page.previous.title }}</a>
+    {%- else %}<span></span>{% endif %}
+    {%- if page.next %}
+    <a class="next" href="{{ page.next.url | relative_url }}"><span class="kicker">Newer</span>{{ page.next.title }}</a>
+    {%- endif %}
+  </nav>
+</article>

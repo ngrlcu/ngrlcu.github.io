@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────
+#  Papers — EDIT ME. Newest first; entries are grouped by `year`.
+#  Every field except title/authors/year is optional; empty links are hidden.
+# ─────────────────────────────────────────────────────────────
+- title: Analog quantum reservoir computing with Rydberg atom arrays
+  authors: L. Nigro, Co-Author, Co-Author
+  venue: In preparation
+  year: 2026
+  links:
+    arxiv: ""
+    pdf: ""
+    code: ""
+  abstract: >-
+    One or two sentences on what the paper shows. Keep it short — the full
+    abstract lives on arXiv.
+  bibtex: |
+    @article{nigro2026rydberg,
+      title   = {Analog quantum reservoir computing with Rydberg atom arrays},
+      author  = {Nigro, Luca and others},
+      year    = {2026}
+    }
+
+- title: Quantum computing for the energy sector — a critical review
+  authors: L. Nigro, Co-Author
+  venue: Under review
+  year: 2026
+  links:
+    arxiv: "https://arxiv.org/"
+  abstract: >-
+    Where quantum algorithms plausibly help energy-sector problems, where they
+    do not, and what resource estimates actually say.
+
+- title: Quantum Computing for the Energy Industry
+  authors: L. Nigro
+  venue: PhD thesis, Università degli Studi di Milano
+  year: Forthcoming

@@ -1,0 +1,6 @@
+{%- comment -%}
+  A row of photos sharing one caption.
+  {% include gallery.html images="/a.jpg, /b.jpg, /c.jpg" caption="Words." cols="3" size="wide" %}
+{%- endcomment -%}
+{%- assign imgs = include.images | split: "," -%}
+<figure class="gallery {{ include.size | default: 'wide' }}" style="--cols: {{ include.cols | default: imgs.size }}"><div class="gallery-grid">{% for img in imgs %}<img src="{{ img | strip | relative_url }}" alt="" loading="lazy">{% endfor %}</div>{% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}</figure>

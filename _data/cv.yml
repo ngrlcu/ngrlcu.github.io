@@ -1,0 +1,60 @@
+# ─────────────────────────────────────────────────────────────
+#  CV — EDIT ME. Structure is real, dates and details are placeholders.
+#  Each section is a list of rows: `when` sits in the left column,
+#  `what` is the bold line, `where` sits beside it, `note` below (Markdown ok).
+# ─────────────────────────────────────────────────────────────
+pdf: /assets/cv.pdf        # drop your PDF here, or set to "" to hide the link
+
+sections:
+  - title: Education
+    items:
+      - when: 2023 — now
+        what: PhD in Physics
+        where: Università degli Studi di Milano
+        note: >-
+          Thesis: *Quantum Computing for the Energy Industry*. Analog quantum
+          reservoir computing with neutral-atom Rydberg arrays; open quantum
+          systems and dissipation engineering.
+      - when: 2021 — 2023
+        what: MSc in Physics
+        where: University, City
+        note: "Thesis: title of your master's thesis."
+      - when: 2018 — 2021
+        what: BSc in Physics
+        where: University, City
+
+  - title: Research
+    items:
+      - when: 2024 — now
+        what: Research collaboration
+        where: IFISC (UIB–CSIC), Palma de Mallorca
+        note: Quantum reservoir computing and open-system dynamics, with G. L. Giorgi and R. Zambrini.
+      - when: 2023 — now
+        what: Quantum computing for energy
+        where: Università degli Studi di Milano
+        note: Critical review of quantum algorithms for energy-sector problems.
+
+  - title: Talks & schools
+    items:
+      - when: 2026
+        what: Analog quantum reservoir computing with Rydberg arrays
+        where: Seminar, Institution
+      - when: 2025
+        what: Summer school on open quantum systems
+        where: Venue, City
+
+  - title: Teaching
+    items:
+      - when: 2024 — 2025
+        what: Teaching assistant, Quantum Mechanics
+        where: Università degli Studi di Milano
+
+  - title: Skills
+    compact: true
+    items:
+      - when: Theory
+        what: Open quantum systems, Lindblad dynamics, dark-state engineering, Liouvillian spectral analysis
+      - when: Numerics
+        what: Python, QuTiP, tensor-network methods for Lindblad dynamics
+      - when: Languages
+        what: Italian (native), English (fluent), Spanish (learning)
