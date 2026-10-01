@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <script>
     try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    (function () {
+      function sbw() { document.documentElement.style.setProperty("--sbw", (window.innerWidth - document.documentElement.clientWidth) + "px"); }
+      document.addEventListener("DOMContentLoaded", sbw); window.addEventListener("resize", sbw);
+    })();
   </script>
 </head>
 <body>
