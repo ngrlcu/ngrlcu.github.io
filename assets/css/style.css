@@ -47,7 +47,7 @@
    Base
    ───────────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; overflow-x: clip; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--bg);
@@ -259,8 +259,8 @@ main { min-height: 60vh; }
 
 /* Figures: text width by default, .wide and .full break out of the column */
 .figure, .gallery { margin: 2.2em 0; }
-.prose .wide { width: min(var(--wide), 100vw - 2 * var(--gutter)); margin-left: 50%; transform: translateX(-50%); }
-.prose .full { width: 100vw; margin-left: 50%; transform: translateX(-50%); }
+.prose .wide { width: min(var(--wide), 100vw - var(--sbw, 0px) - 2 * var(--gutter)); margin-left: 50%; transform: translateX(-50%); }
+.prose .full { width: calc(100vw - var(--sbw, 0px)); margin-left: 50%; transform: translateX(-50%); }
 .prose img { width: 100%; }
 figcaption {
   margin-top: 10px; font-family: var(--sans); font-size: .8rem; line-height: 1.5; color: var(--muted);
