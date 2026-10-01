@@ -1,6 +1,9 @@
 {%- comment -%}
   A row of photos sharing one caption.
-  {% include gallery.html images="/a.jpg, /b.jpg, /c.jpg" caption="Words." cols="3" size="wide" %}
+  {% include gallery.html images="/a.jpg, /b.jpg, /c.jpg" caption="Words." size="wide" %}
+  Optional ratios="1.5, 0.67, 0.67" (width ÷ height of each photo): photos then keep
+  their own shape and line up at a common height. Without ratios they are cropped to 4:5.
 {%- endcomment -%}
 {%- assign imgs = include.images | split: "," -%}
-<figure class="gallery {{ include.size | default: 'wide' }}" style="--cols: {{ include.cols | default: imgs.size }}"><div class="gallery-grid">{% for img in imgs %}<img src="{{ img | strip | relative_url }}" alt="" loading="lazy">{% endfor %}</div>{% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}</figure>
+{%- if include.ratios -%}{%- assign rs = include.ratios | split: "," -%}{%- endif -%}
+<figure class="gallery {{ include.size | default: 'wide' }}{% if include.ratios %} natural{% endif %}" style="--cols: {{ include.cols | default: imgs.size }}"><div class="gallery-grid">{% for img in imgs %}<img src="{{ img | strip | relative_url }}" alt="" loading="lazy"{% if include.ratios %} style="flex: {{ rs[forloop.index0] | strip }} 1 0; aspect-ratio: {{ rs[forloop.index0] | strip }}"{% endif %}>{% endfor %}</div>{% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}</figure>
