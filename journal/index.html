@@ -22,7 +22,7 @@ description: Travel notes, photographs and the occasional essay.
 
 {%- if featured %}
 <a class="feature entry" data-cat="{{ featured.category }}" href="{{ featured.url | relative_url }}">
-  {%- if featured.cover %}<img src="{{ featured.cover | relative_url }}" alt="{{ featured.cover_alt | default: '' }}">{% endif %}
+  {%- if featured.cover %}{% assign csrc = featured.cover | relative_url %}{% assign cstem = csrc | remove: ".jpg" %}{% if featured.avif %}<picture><source type="image/avif" srcset="{{ cstem }}-1200.avif 1200w, {{ cstem }}.avif 2000w" sizes="(max-width: 860px) 100vw, 640px">{% endif %}<img src="{{ csrc }}" alt="{{ featured.cover_alt | default: '' }}">{% if featured.avif %}</picture>{% endif %}{% endif %}
   <div class="feature-text">
     <p class="kicker">{{ site.data.categories[featured.category].title | default: featured.category }} · {{ featured.date | date: "%B %Y" }}{% if featured.location %} · {{ featured.location }}{% endif %}</p>
     <h2>{{ featured.title }}</h2>
@@ -35,7 +35,7 @@ description: Travel notes, photographs and the occasional essay.
   {%- for post in site.posts %}
   {%- if post.url == featured.url %}{% continue %}{% endif %}
   <a class="card entry" data-cat="{{ post.category }}" href="{{ post.url | relative_url }}">
-    {%- if post.cover %}<img src="{{ post.cover | relative_url }}" alt="{{ post.cover_alt | default: '' }}" loading="lazy">{% endif %}
+    {%- if post.cover %}{% assign csrc = post.cover | relative_url %}{% assign cstem = csrc | remove: ".jpg" %}{% if post.avif %}<picture><source type="image/avif" srcset="{{ cstem }}-1200.avif">{% endif %}<img src="{{ csrc }}" alt="{{ post.cover_alt | default: '' }}" loading="lazy" decoding="async">{% if post.avif %}</picture>{% endif %}{% endif %}
     <p class="kicker">{{ site.data.categories[post.category].title | default: post.category }} · {{ post.date | date: "%b %Y" }}</p>
     <h3>{{ post.title }}</h3>
     {%- if post.dek %}<p class="dek">{{ post.dek }}</p>{% endif %}
