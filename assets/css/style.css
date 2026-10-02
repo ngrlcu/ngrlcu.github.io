@@ -26,6 +26,7 @@
   --rule: #e6e3dc;
   --tint: #f2f0ea;
   --accent: #b5542d;
+  --accent-2: #3a6f8c;
   --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
   --narrow: 640px;
@@ -36,12 +37,12 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #121211; --fg: #ecebe7; --muted: #9a9892; --faint: #6b6964;
-    --rule: #2a2927; --tint: #1c1c1a; --accent: #e0835c; color-scheme: dark;
+    --rule: #2a2927; --tint: #1c1c1a; --accent: #e0835c; --accent-2: #6cb6d6; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #121211; --fg: #ecebe7; --muted: #9a9892; --faint: #6b6964;
-  --rule: #2a2927; --tint: #1c1c1a; --accent: #e0835c; color-scheme: dark;
+  --rule: #2a2927; --tint: #1c1c1a; --accent: #e0835c; --accent-2: #6cb6d6; color-scheme: dark;
 }
 
 /* ─────────────────────────────────────────────────────────────
