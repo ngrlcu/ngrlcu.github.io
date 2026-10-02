@@ -1,4 +1,5 @@
 ---
+route: [[37.75, -119.59], [36.49, -118.57], [36.27, -121.81], [34.90, -115.73], [36.46, -116.87], [34.56, -115.74]]   # [lat, lon] stops, drawn on the journal globe
 avif: true            # AVIF copies exist next to every photo (see README)
 title: Granite, giants and sand
 dek: A week through California in March 2025, from Yosemite to the Pacific and out into the desert.

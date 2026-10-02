@@ -1,4 +1,5 @@
 ---
+route: [[44.49, 11.34], [44.36, 11.29], [44.09, 11.28], [43.81, 11.29], [43.77, 11.26]]   # [lat, lon] stops, drawn on the journal globe
 avif: true            # AVIF copies exist next to every photo (see README)
 title: Bologna to Florence on foot
 dek: The Via degli Dei over the Apennines in August 2025, from San Luca to the Duomo.

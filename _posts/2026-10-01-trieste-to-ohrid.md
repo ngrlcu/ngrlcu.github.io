@@ -1,4 +1,5 @@
 ---
+route: [[45.65, 13.78], [46.05, 14.51], [45.66, 13.99], [44.88, 15.62], [43.86, 18.41], [43.34, 17.81], [43.33, 18.68], [43.15, 19.12], [42.40, 19.77], [41.12, 20.80]]   # [lat, lon] stops, drawn on the journal globe
 avif: true            # AVIF copies exist next to every photo (see README)
 title: Trieste to Ohrid
 dek: A road trip down the Balkans in August 2026, across seven countries, on a Nikon and a few rolls of film.
