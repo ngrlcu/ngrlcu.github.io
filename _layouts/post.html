@@ -18,7 +18,8 @@ width: wide
 
   {%- if page.cover %}
   <figure class="cover">
-    <img src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: '' }}">
+    {%- assign csrc = page.cover | relative_url -%}{%- assign cstem = csrc | remove: ".jpg" -%}
+    {% if page.avif %}<picture><source type="image/avif" srcset="{{ cstem }}-1200.avif 1200w, {{ cstem }}.avif 2000w" sizes="(max-width: 1120px) 100vw, 1080px">{% endif %}<img src="{{ csrc }}" alt="{{ page.cover_alt | default: '' }}" fetchpriority="high">{% if page.avif %}</picture>{% endif %}
     {%- if page.cover_caption %}<figcaption>{{ page.cover_caption }}</figcaption>{% endif %}
   </figure>
   {%- endif %}
