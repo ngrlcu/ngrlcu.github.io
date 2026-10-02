@@ -10,6 +10,12 @@ permalink: /cv/
   {%- endif %}
 </header>
 
+<figure class="wave" data-wave>
+  <canvas tabindex="0" role="img" aria-label="An animated wave packet in a harmonic trap. Click to measure its position."></canvas>
+  <figcaption>A squeezed state in a harmonic trap, evolving exactly. Click to measure its position: the wave function collapses where the particle is found, then breathes and spreads again. Shown: |ψ|², Re ψ and Im ψ.</figcaption>
+</figure>
+<script src="{{ '/assets/js/wave.js' | relative_url }}" defer></script>
+
 {%- for section in site.data.cv.sections %}
 <section class="cv-section">
   <h2 class="label">{{ section.title }}</h2>
