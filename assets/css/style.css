@@ -341,11 +341,11 @@ figcaption {
   mask-composite: intersect; }
 
 /* About page: laser beams behind the content */
-.beams { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;
+.beams, .sky { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;
   /* beams are dimmed further behind the text column */
   -webkit-mask-image: linear-gradient(90deg, #000 calc(50% - 440px), rgba(0,0,0,.4) calc(50% - 340px), rgba(0,0,0,.4) calc(50% + 340px), #000 calc(50% + 440px));
   mask-image: linear-gradient(90deg, #000 calc(50% - 440px), rgba(0,0,0,.4) calc(50% - 340px), rgba(0,0,0,.4) calc(50% + 340px), #000 calc(50% + 440px)); }
-@media (max-width: 760px) { .beams { -webkit-mask-image: none; mask-image: none; opacity: .55; } }
+@media (max-width: 760px) { .beams, .sky { -webkit-mask-image: none; mask-image: none; opacity: .55; } }
 .wave canvas { display: block; width: 100%; height: 160px; cursor: pointer; outline: none;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
