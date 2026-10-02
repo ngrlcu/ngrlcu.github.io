@@ -22,16 +22,21 @@ portrait: ""               # e.g. /assets/img/portrait.jpg
 
 # Links under the bio on the About page (and in the footer).
 links:
-  - title: Email
-    url: "mailto:your.name@unimi.it"
   - title: Google Scholar
-    url: "https://scholar.google.com/"
+    url: "https://scholar.google.com/citations?user=Ys6rJ8gAAAAJ"
   - title: arXiv
-    url: "https://arxiv.org/a/"
+    url: "https://arxiv.org/search/?searchtype=author&query=Nigro%2C+Luca"
+  - title: LinkedIn
+    url: "https://www.linkedin.com/in/luca-nigro-quantum"
   - title: GitHub
-    url: "https://github.com/yourusername"
-  - title: ORCID
-    url: "https://orcid.org/"
+    url: "https://github.com/ngrlcu"
+  - title: Instagram
+    url: "https://www.instagram.com/luca_nigro_ph/"
+  # Add when ready:
+  # - title: Email
+  #   url: "mailto:name@unimi.it"
+  # - title: ORCID
+  #   url: "https://orcid.org/0000-0000-0000-0000"
 
 # ─────────────────────────────────────────────────────────────
 #  Build settings — normally no need to touch

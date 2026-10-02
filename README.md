@@ -55,8 +55,21 @@ Your text in Markdown.
 ```
 
 Photo sizes: none = text width, `wide` = wider than the text, `full` = edge to
-edge. Export photos at ~2000 px on the long side, JPEG quality ~80 — keep each
-under ~500 KB. Posts dated in the future are not published until that date.
+edge. Posts dated in the future are not published until that date.
+
+Photo exports:
+
+| File | Long edge | Format | Target weight |
+|---|---|---|---|
+| `NN.jpg` (every photo) | 1600 px | JPEG q 78, progressive, sRGB, metadata stripped | 150–350 KB, never above 500 KB |
+| `cover.jpg` | 2000 px | JPEG q 80 | ≤ 600 KB |
+| `NN-600.avif`, `NN-1000.avif`, `NN.avif` | 600 / 1000 / 1600 px wide | AVIF q 60 | ~ two-thirds of the JPEG |
+| `cover-1200.avif`, `cover.avif` | 1200 / 2000 px wide | AVIF q 60 | |
+
+Browsers that understand AVIF (nearly all) download only the size they need;
+the JPEG is the fallback. Put `avif: true` in a post's front matter only once
+the AVIF copies exist next to its photos, otherwise leave it out and the JPEGs
+are used.
 
 The four sample posts and `assets/img/journal/*` are placeholders; delete them
 when you have your own.
