@@ -7,10 +7,12 @@
 // spheres. Everything follows geometric optics:
 //   · plates: beamsplitters (part transmitted, part reflected) and dichroic
 //     long-pass mirrors (λ ≥ 560 nm reflected, shorter transmitted);
-//   · spheres: Snell refraction with a Cauchy index n(λ), so white light fans
-//     out into colours; light can reflect inside and leave after a bounce.
-// Index dispersion and internal reflectance are exaggerated so the effects
-// are visible at screen scale. Click to lock the crossing point; click again
+//   · a sphere of SF11 dense flint glass: Snell refraction with the Schott
+//     Sellmeier index n(λ), exact Fresnel reflectance (unpolarised) at every
+//     surface, so white light fans out into colours and a small fraction is
+//     reflected inside and leaves after a bounce.
+// Beam opacity is proportional to intensity; nothing is exaggerated, so
+// faint reflections are faint. Click to lock the crossing point; click again
 // or press Esc to release it. Plain canvas, no dependencies.
 (function () {
   var canvas = document.querySelector("canvas.beams");
@@ -18,7 +20,7 @@
   var ctx = canvas.getContext("2d");
   var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  var LASERS = 5, WHITE = 2, PLATES = 4, SPHERES = 3, MAXDEPTH = 7;
+  var LASERS = 4, WHITE = 1, PLATES = 2, SPHERES = 1, MAXDEPTH = 7;
   var LASER = 600;                                  // nm, drawn in --accent
   var BANDS = [650, 600, 550, 490, 430];            // white light, nm
   var W = 0, H = 0, dpr = 1, dark = false;
@@ -54,8 +56,12 @@
     spec.forEach(function (l) { var b = col.band[l]; c[0] += b[0]; c[1] += b[1]; c[2] += b[2]; });
     return [c[0] / spec.length | 0, c[1] / spec.length | 0, c[2] / spec.length | 0];
   }
-  // Cauchy dispersion, exaggerated: n(650) ≈ 1.36, n(430) ≈ 1.52
-  function index(l) { return 1.24 + 52000 / (l * l); }
+  // Schott SF11, Sellmeier: n(430) = 1.818, n(650) = 1.776
+  function index(l) {
+    var w = (l / 1000) * (l / 1000);
+    return Math.sqrt(1 + 1.73759695 * w / (w - 0.013188707) + 0.313747346 * w / (w - 0.0623068142)
+                       + 1.89878101 * w / (w - 155.23629));
+  }
 
   // ── Layout ────────────────────────────────────────────────────────
   function edge(u) {
@@ -85,12 +91,12 @@
     while (spheres.length < SPHERES && tries++ < 300) {
       // spheres prefer the margins beside the text column on wide screens
       var x = wideMargins ? (Math.random() < 0.5 ? rnd(0.05, 0.24) : rnd(0.76, 0.95)) * W : rnd(0.1, 0.9) * W;
-      var s = { x: x, y: rnd(0.14, 0.86) * H, r: rnd(24, 44), id: "s" + spheres.length };
+      var s = { x: x, y: rnd(0.2, 0.8) * H, r: rnd(34, 46), id: "s" + spheres.length };
       if (free(s.x, s.y, Math.min(W, H) * 0.24)) { spheres.push(s); all.push(s); }
     }
     tries = 0;
     while (plates.length < PLATES && tries++ < 300) {
-      var p = { x: rnd(0.07, 0.93) * W, y: rnd(0.1, 0.9) * H, a: rnd(0, Math.PI), len: rnd(40, 64),
+      var p = { x: (wideMargins ? (Math.random() < 0.5 ? rnd(0.05, 0.22) : rnd(0.78, 0.95)) : rnd(0.07, 0.93)) * W, y: rnd(0.1, 0.9) * H, a: rnd(0, Math.PI), len: rnd(40, 64),
                 kind: plates.length % 2 ? "dichroic" : "split", spin: rnd(-0.03, 0.03), id: "p" + plates.length };
       if (free(p.x, p.y, Math.min(W, H) * 0.2)) { plates.push(p); all.push(p); }
     }
@@ -137,13 +143,20 @@
     return { x: eta * dx + f * nx, y: eta * dy + f * ny };
   }
   function reflect(dx, dy, nx, ny) { var d = dx * nx + dy * ny; return { x: dx - 2 * d * nx, y: dy - 2 * d * ny }; }
-  // Schlick's approximation to the Fresnel reflectance.
-  function fresnel(ci, n1, n2) { var r0 = (n1 - n2) / (n1 + n2); r0 *= r0; return r0 + (1 - r0) * Math.pow(1 - Math.abs(ci), 5); }
+  // Fresnel reflectance for unpolarised light, from n1 into n2, cos(incidence) = ci.
+  function fresnel(ci, n1, n2) {
+    ci = Math.min(1, Math.abs(ci));
+    var st = n1 / n2 * Math.sqrt(1 - ci * ci);
+    if (st >= 1) return 1;                                   // total internal reflection
+    var ct = Math.sqrt(1 - st * st);
+    var rs = (n1 * ci - n2 * ct) / (n1 * ci + n2 * ct), rp = (n2 * ci - n1 * ct) / (n2 * ci + n1 * ct);
+    return 0.5 * (rs * rs + rp * rp);
+  }
 
   // ── Tracing ───────────────────────────────────────────────────────
   // amp(s): beam strength at path length s along this ray.
   function trace(px, py, dx, dy, len, amp, spec, depth, skip) {
-    if (amp(0) < 0.012 || len < 1) return;
+    if (amp(0) < 0.006 || len < 1) return;
     var h = depth < MAXDEPTH ? hit(px, py, dx, dy, len, skip) : null;
     var end = h ? h.t : len;
     stroke(px, py, dx, dy, end, amp, specColour(spec));
@@ -157,12 +170,12 @@
       var nx = -Math.sin(o.a), ny = Math.cos(o.a);
       var r = reflect(dx, dy, nx, ny);
       if (o.kind === "split") {
-        trace(hx, hy, dx, dy, rest, on(0.6), spec, depth + 1, o.id);
-        trace(hx, hy, r.x, r.y, reach, fade(a0 * 0.62), spec, depth + 1, o.id);
+        trace(hx, hy, dx, dy, rest, on(0.5), spec, depth + 1, o.id);            // 50:50
+        trace(hx, hy, r.x, r.y, reach, fade(a0 * 0.5), spec, depth + 1, o.id);
       } else {                                                // dichroic long-pass mirror
         var lng = spec.filter(function (l) { return l >= 560; }), sht = spec.filter(function (l) { return l < 560; });
-        if (sht.length) trace(hx, hy, dx, dy, rest, on(0.9 * sht.length / spec.length + 0.1), sht, depth + 1, o.id);
-        if (lng.length) trace(hx, hy, r.x, r.y, reach, fade(a0 * (0.75 * lng.length / spec.length + 0.2)), lng, depth + 1, o.id);
+        if (sht.length) trace(hx, hy, dx, dy, rest, on(sht.length / spec.length), sht, depth + 1, o.id);
+        if (lng.length) trace(hx, hy, r.x, r.y, reach, fade(a0 * lng.length / spec.length), lng, depth + 1, o.id);
       }
       return;
     }
@@ -170,25 +183,23 @@
     var mx = (hx - o.x) / o.r, my = (hy - o.y) / o.r, ci = -(dx * mx + dy * my);
     var Rext = fresnel(ci, 1, index(spec[0]));
     var rr = reflect(dx, dy, mx, my);
-    trace(hx, hy, rr.x, rr.y, reach * 0.5, fade(a0 * Rext * 1.4), spec, depth + 1, o.id);
-    var share = spec.length > 1 ? 1.5 : 1;            // separated colours read fainter than white
+    trace(hx, hy, rr.x, rr.y, reach * 0.5, fade(a0 * Rext), spec, depth + 1, o.id);
     spec.forEach(function (l) {                               // each colour bends by its own index
-      var t = refract(dx, dy, mx, my, 1 / index(l));
-      if (t) inside(hx, hy, t.x, t.y, o, l, a0 * (1 - Rext) * share, depth + 1, 0);
+      var t = refract(dx, dy, mx, my, 1 / index(l)), R = fresnel(ci, 1, index(l));
+      // each band carries its share of the intensity
+      if (t) inside(hx, hy, t.x, t.y, o, l, a0 * (1 - R) / spec.length, depth + 1, 0);
     });
   }
   // A ray of wavelength l travelling inside sphere o from a point on its surface.
   function inside(px, py, dx, dy, o, l, a, depth, bounces) {
-    if (a < 0.012) return;
+    if (a < 0.006) return;
     var s = -2 * ((px - o.x) * dx + (py - o.y) * dy);       // chord length to the far side
     if (s <= 0.01) return;
     stroke(px, py, dx, dy, s, function () { return a; }, specColour([l]));
     var qx = px + dx * s, qy = py + dy * s;
     var mx = (qx - o.x) / o.r, my = (qy - o.y) / o.r, n = index(l);
     var out = refract(dx, dy, -mx, -my, n);                  // normal facing the ray is −m
-    // Internal reflectance raised from the Fresnel value (a few per cent) so
-    // that the bounce, and the rainbow it makes, can be seen.
-    var Rin = out ? Math.min(0.9, fresnel(dx * mx + dy * my, n, 1) + 0.38) : 1;
+    var Rin = fresnel(dx * mx + dy * my, n, 1);              // exact; 1 if totally reflected
     if (out) trace(qx, qy, out.x, out.y, Math.max(W, H) * 0.6,
       function (t) { return a * (1 - Rin) * Math.max(0, 1 - t / (Math.max(W, H) * 0.6)); }, [l], depth + 1, o.id);
     if (bounces < 3 && depth < MAXDEPTH + 2) {
@@ -202,7 +213,7 @@
     var g = ctx.createLinearGradient(px, py, x1, y1);
     for (var k = 0; k <= 5; k++) g.addColorStop(k / 5, rgba(c, amp(len * k / 5)));
     ctx.strokeStyle = g;
-    ctx.lineWidth = 3.2; ctx.globalAlpha = dark ? 0.16 : 0.1; seg(px, py, x1, y1);   // halo
+    ctx.lineWidth = 3; ctx.globalAlpha = dark ? 0.12 : 0.08; seg(px, py, x1, y1);   // halo
     ctx.lineWidth = 0.9; ctx.globalAlpha = 1; seg(px, py, x1, y1);                    // core
   }
   function seg(x0, y0, x1, y1) { ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke(); }
@@ -223,7 +234,7 @@
       var ex = Math.cos(t * 0.7 + b.ph) * b.jr, ey = Math.sin(t * 0.53 + b.ph * 1.7) * b.jr;
       var o = edge(b.u), tx = focus.x + ex, ty = focus.y + ey;
       var dx = tx - o.x, dy = ty - o.y, L = Math.hypot(dx, dy) || 1;
-      var peak = 0.6 * b.w * k, base = 0.08 * b.w * k;
+      var peak = 0.3 * b.w * k, base = 0.05 * b.w * k;
       trace(o.x, o.y, dx / L, dy / L, L + tail, function (s) {
         if (s <= L) { var f = s / L; return base + (peak - base) * f * f * f; }
         return peak * 0.6 * Math.max(0, 1 - (s - L) / tail);
@@ -239,7 +250,7 @@
       var tx = sp.x - dy0 / L0 * off, ty = sp.y + dx0 / L0 * off;
       var dx = tx - o.x, dy = ty - o.y, L = Math.hypot(dx, dy) || 1, reach = L + Math.max(W, H) * 0.6;
       trace(o.x, o.y, dx / L, dy / L, reach, function (s) {
-        return (0.1 + 0.28 * Math.min(1, s / L)) * k * Math.max(0, 1 - Math.max(0, s - L) / (reach - L));
+        return (0.12 + 0.38 * Math.min(1, s / L)) * k * Math.max(0, 1 - Math.max(0, s - L) / (reach - L));
       }, BANDS.slice(), 0, null);
     });
 
@@ -255,23 +266,23 @@
       ctx.beginPath();
       ctx.moveTo(o.x - ux - nx, o.y - uy - ny); ctx.lineTo(o.x + ux - nx, o.y + uy - ny);
       ctx.lineTo(o.x + ux + nx, o.y + uy + ny); ctx.lineTo(o.x - ux + nx, o.y - uy + ny); ctx.closePath();
-      ctx.fillStyle = rgba(tint, (o.kind === "dichroic" ? 0.14 : 0.07) + 0.1 * g); ctx.fill();
-      ctx.lineWidth = 0.8; ctx.strokeStyle = rgba(tint, 0.34 + 0.25 * g); ctx.stroke();
+      ctx.fillStyle = rgba(tint, (o.kind === "dichroic" ? 0.09 : 0.05) + 0.06 * g); ctx.fill();
+      ctx.lineWidth = 0.8; ctx.strokeStyle = rgba(tint, 0.22 + 0.15 * g); ctx.stroke();
     });
     spheres.forEach(function (o) {
       var g = o.glow || 0;
       var grad = ctx.createRadialGradient(o.x - o.r * 0.35, o.y - o.r * 0.4, o.r * 0.1, o.x, o.y, o.r);
       grad.addColorStop(0, rgba(col.glass, 0.07 + 0.05 * g)); grad.addColorStop(1, rgba(col.glass, 0.025));
       ctx.fillStyle = grad; ctx.beginPath(); ctx.arc(o.x, o.y, o.r, 0, 6.2832); ctx.fill();
-      ctx.lineWidth = 0.8; ctx.strokeStyle = rgba(col.glass, 0.3 + 0.2 * g); ctx.stroke();
+      ctx.lineWidth = 0.8; ctx.strokeStyle = rgba(col.glass, 0.2 + 0.12 * g); ctx.stroke();
       ctx.beginPath(); ctx.arc(o.x, o.y, o.r * 0.78, -2.5, -1.7);          // a small highlight
-      ctx.strokeStyle = rgba(col.glass, 0.22); ctx.stroke();
+      ctx.strokeStyle = rgba(col.glass, 0.14); ctx.stroke();
     });
   }
   function drawCloud(now, k) {
     var pulse = reduce ? 1 : 1 + 0.1 * Math.sin(now / 520);
     var r = 34 * pulse, g = ctx.createRadialGradient(focus.x, focus.y, 0, focus.x, focus.y, r);
-    g.addColorStop(0, rgba(col.laser, 0.34 * k)); g.addColorStop(0.3, rgba(col.laser, 0.12 * k)); g.addColorStop(1, rgba(col.laser, 0));
+    g.addColorStop(0, rgba(col.laser, 0.2 * k)); g.addColorStop(0.3, rgba(col.laser, 0.07 * k)); g.addColorStop(1, rgba(col.laser, 0));
     ctx.fillStyle = g; ctx.beginPath(); ctx.arc(focus.x, focus.y, r, 0, 6.2832); ctx.fill();
     if (lock) {
       ctx.lineWidth = 0.8; ctx.strokeStyle = rgba(col.laser, 0.5);
