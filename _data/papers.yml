@@ -2,15 +2,43 @@
 #  Papers — newest first; grouped by `year`.
 #  Every field except title/authors/year is optional; empty links are hidden.
 # ─────────────────────────────────────────────────────────────
-- title: Non-Markovian dissipative quantum dynamics for temporal information processing
+- title: Non-Markovian dissipation as a resource for quantum reservoir computing
   authors: L. Nigro, F. Monzani, E. Prati
-  venue: Forthcoming
+  venue: arXiv:2609.40172
   year: 2026
+  links:
+    arxiv: "https://arxiv.org/abs/2609.40172"
+  abstract: >-
+    Non-Markovianity modelled and regulated with fractional derivatives: time
+    subordination gives tunable, heavy-tailed relaxation whose information
+    backflow redistributes reservoir memory towards recent inputs, improving
+    short-delay memory capacity and nonlinear prediction.
+  bibtex: |
+    @article{nigro2026nonmarkovian,
+      title   = {Non-Markovian dissipation as a resource for quantum reservoir computing},
+      author  = {Nigro, Luca and Monzani, Francesco and Prati, Enrico},
+      journal = {arXiv preprint arXiv:2609.40172},
+      year    = {2026}
+    }
 
-- title: Analog quantum reservoir computing on neutral atoms from first principles
+- title: Analog neutral-atom for in-memory processing in quantum reservoir computing
   authors: L. Nigro, G. L. Giorgi, E. Prati, R. Zambrini
-  venue: Forthcoming
+  venue: arXiv:2609.28441
   year: 2026
+  links:
+    arxiv: "https://arxiv.org/abs/2609.28441"
+  abstract: >-
+    Controlled dissipation is strictly necessary to give neutral-atom reservoirs
+    the echo state property, fading memory and separability. Performance peaks at
+    the edge of quantum chaos, and as few as five atoms solve the Mackey-Glass
+    time series without external classical buffering.
+  bibtex: |
+    @article{nigro2026analog,
+      title   = {Analog neutral-atom for in-memory processing in quantum reservoir computing},
+      author  = {Nigro, Luca and Giorgi, Gian Luca and Prati, Enrico and Zambrini, Roberta},
+      journal = {arXiv preprint arXiv:2609.28441},
+      year    = {2026}
+    }
 
 - title: Quantum reservoir computing induced by controllable damping
   authors: E. Ricci, F. Monzani, L. Nigro, E. Prati
@@ -75,6 +103,27 @@
       doi     = {10.1002/qute.202400371}
     }
 
+- title: Simulation of nuclear processes by a quantum computer
+  authors: L. Nigro, C. Barbieri, E. Prati
+  venue: "Journal of Physics: Conference Series 3017, 012050"
+  year: 2025
+  links:
+    doi: "https://doi.org/10.1088/1742-6596/3017/1/012050"
+  abstract: >-
+    The key ingredients of a full nuclear transition simulation in tritium on
+    four qubits, with the d(n, γ)t neutron capture compared against tritium
+    de-excitation.
+  bibtex: |
+    @inproceedings{nigro2025nuclear,
+      title     = {Simulation of nuclear processes by a quantum computer},
+      author    = {Nigro, Luca and Barbieri, Carlo and Prati, Enrico},
+      booktitle = {Journal of Physics: Conference Series},
+      volume    = {3017},
+      pages     = {012050},
+      year      = {2025},
+      doi       = {10.1088/1742-6596/3017/1/012050}
+    }
+
 - title: Non-unital noise in a superconducting quantum computer as a computational resource for reservoir computing
   authors: F. Monzani, E. Ricci, L. Nigro, E. Prati
   venue: arXiv:2409.07886
@@ -85,3 +134,19 @@
     Amplitude-damping noise, modelled as a non-unital channel, improves reservoir
     computing on time-dependent tasks by preventing the information loss caused
     by mid-circuit measurements.
+
+- title: Enforcing fading memory of noisy quantum echo state networks
+  authors: F. Monzani, E. Ricci, L. Nigro, E. Prati
+  venue: "IEEE Quantum Week (QCE 2024), pp. 476–477"
+  year: 2024
+  links:
+    doi: "https://doi.org/10.1109/QCE60285.2024.10363"
+  bibtex: |
+    @inproceedings{monzani2024fading,
+      title     = {Enforcing Fading Memory of Noisy Quantum Echo State Networks},
+      author    = {Monzani, Francesco and Ricci, Emanuele and Nigro, Luca and Prati, Enrico},
+      booktitle = {2024 IEEE International Conference on Quantum Computing and Engineering (QCE)},
+      pages     = {476--477},
+      year      = {2024},
+      doi       = {10.1109/QCE60285.2024.10363}
+    }

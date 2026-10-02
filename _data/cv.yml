@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────────────────────
-#  CV — from Luca's résumé (30 Sep 2026).
+#  CV — from Luca's résumé (30 Sep 2026), updated 2 Oct 2026.
 #  Each section is a list of rows: `when` sits in the left column,
 #  `what` is the bold line, `where` sits beside it, `note` below (Markdown ok).
 # ─────────────────────────────────────────────────────────────
@@ -43,7 +43,9 @@ sections:
       - when: 2023 — 2026
         what: PhD in Physics
         where: Università degli Studi di Milano
-        note: "Topic: *Next generation of quantum algorithms for optimisation and quantum chemistry*."
+        note: >-
+          Thesis: *Quantum Computing for the Energy Industry*, supervised by
+          Enrico Prati. Submitted September 2026; defence expected January 2027.
       - when: 2020 — 2023
         what: MSc in Physics, 110/110 cum laude
         where: Università degli Studi di Milano
@@ -77,6 +79,15 @@ sections:
       - when: Dec 2023
         what: CINECA HPC & QC Workshop
         where: Bologna — talk
+
+  - title: Schools
+    items:
+      - when: Jun 2025
+        what: DTP-TALENT School — Quantum Computing for Nuclear Physics
+        where: ECT*, Trento
+      - when: Sep 2024
+        what: European Quantum AI Summer School (EQAI)
+        where: Lignano Sabbiadoro
 
   - title: Scientific service
     items:
