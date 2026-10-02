@@ -1,0 +1,6 @@
+# Countries shown dark on the journal globe (ISO 3166 numeric codes).
+# Changing this list means rebuilding assets/js/globe.js — ask Claude.
+home: "380"   # Italy
+visited: ["336", "756", "492", "250", "724", "840", "356", "276", "246", "578",
+          "528", "348", "203", "703", "040", "208", "300", "234", "504", "826",
+          "392", "705", "191", "070", "499", "008", "807"]
