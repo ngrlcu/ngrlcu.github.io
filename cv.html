@@ -10,11 +10,16 @@ permalink: /cv/
   {%- endif %}
 </header>
 
-<figure class="wave" data-wave>
-  <canvas tabindex="0" role="img" aria-label="An animated wave packet in a harmonic trap. Click to measure its position."></canvas>
-  <figcaption>A squeezed state in a harmonic trap, evolving exactly. Click to measure its position: the wave function collapses where the particle is found, then breathes and spreads again. Shown: |ψ|², Re ψ and Im ψ.</figcaption>
+<figure class="wigner" data-wigner>
+  <canvas tabindex="0" role="img" aria-label="The Wigner function of a quantum state of light, drawn as ridgelines and rotating in phase space. Click to show the next state."></canvas>
+  <figcaption>The Wigner function <i>W</i>(<i>x</i>, <i>p</i>) of a single bosonic mode, computed exactly and rotating rigidly in phase space under <i>H</i> = <i>ω</i><i>a</i><sup>†</sup><i>a</i>; blue marks negative quasi-probability, which no classical distribution can exhibit. Click for the next state.</figcaption>
 </figure>
-<script src="{{ '/assets/js/wave.js' | relative_url }}" defer></script>
+<script type="module">
+  const el = document.querySelector("[data-wigner]");
+  const load = () => import("{{ '/assets/js/wigner.js' | relative_url }}").then(m => m.mount(el)).catch(() => { el.hidden = true; });
+  const io = new IntersectionObserver(e => { if (e[0].isIntersecting) { io.disconnect(); load(); } }, { rootMargin: "200px" });
+  io.observe(el);
+</script>
 
 {%- for section in site.data.cv.sections %}
 <section class="cv-section">
