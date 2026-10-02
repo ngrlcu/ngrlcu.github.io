@@ -88,3 +88,14 @@ bundle exec jekyll serve     # → http://localhost:4000
 - Light/dark follows the visitor's system; the footer toggle overrides it.
 - RSS feed for the journal at `/journal/feed.xml`; SEO/social tags are generated
   automatically. The CV page prints cleanly (Ctrl/Cmd-P).
+
+## Globe and lattice
+
+- **Journal globe** (`assets/js/globe.js`, three.js, loaded only when the globe scrolls into view).
+  A post appears on it when its front matter has a route of `[lat, lon]` stops, e.g.
+  `route: [[44.49, 11.34], [43.77, 11.26]]`. The highlighted countries are listed in
+  `_data/travel.yml`; changing that list needs the globe rebuilt (ask Claude).
+- **Papers lattice** (`assets/js/lattice.js`, plain canvas, ~3 KB). Spacing, blockade radius and
+  decay time are the constants at the top of the file.
+
+Both respect "reduce motion" and pause when off screen.

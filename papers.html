@@ -9,6 +9,12 @@ permalink: /papers/
   {%- if scholar %}<a class="chip" href="{{ scholar.url }}">Google Scholar</a>{% endif %}
 </header>
 
+<figure class="lattice" data-lattice>
+  <canvas role="img" aria-label="An animated array of Rydberg atoms: excited atoms block their neighbours and slowly fade."></canvas>
+  <figcaption>A Rydberg array, live. Move across it: each excited atom blocks its neighbours inside the blockade radius, and every excitation fades — the fading memory a quantum reservoir computes with.</figcaption>
+</figure>
+<script src="{{ '/assets/js/lattice.js' | relative_url }}" defer></script>
+
 {%- assign me = site.author.short | default: site.author.name -%}
 {%- assign bold_me = "<b>" | append: me | append: "</b>" -%}
 {%- assign years = site.data.papers | group_by: "year" -%}
