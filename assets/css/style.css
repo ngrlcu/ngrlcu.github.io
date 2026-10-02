@@ -25,6 +25,7 @@
   --faint: #a19e96;
   --rule: #e6e3dc;
   --tint: #f2f0ea;
+  --accent: #b5542d;
   --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
   --narrow: 640px;
@@ -35,12 +36,12 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #121211; --fg: #ecebe7; --muted: #9a9892; --faint: #6b6964;
-    --rule: #2a2927; --tint: #1c1c1a; color-scheme: dark;
+    --rule: #2a2927; --tint: #1c1c1a; --accent: #e0835c; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #121211; --fg: #ecebe7; --muted: #9a9892; --faint: #6b6964;
-  --rule: #2a2927; --tint: #1c1c1a; color-scheme: dark;
+  --rule: #2a2927; --tint: #1c1c1a; --accent: #e0835c; color-scheme: dark;
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -315,3 +316,25 @@ figcaption {
   .label { margin-top: 24px; }
   a { text-decoration: none; }
 }
+
+/* ─────────────────────────────────────────────────────────────
+   Journal globe and Papers lattice
+   ───────────────────────────────────────────────────────────── */
+.globe { position: relative; margin: 8px 0 56px; }
+.globe canvas { display: block; width: 100%; height: clamp(300px, 46vw, 470px); touch-action: pan-y; cursor: grab;
+  opacity: 0; transition: opacity .8s ease; }
+.globe.is-ready canvas { opacity: 1; }
+.globe canvas:active { cursor: grabbing; }
+.globe figcaption, .lattice figcaption { max-width: var(--narrow); margin: 8px auto 0; text-align: center; }
+.globe-tip {
+  position: absolute; top: 0; left: 0; pointer-events: none; max-width: 240px;
+  padding: 7px 10px 8px; background: var(--bg); border: 1px solid var(--rule); border-radius: 6px;
+  font-family: var(--serif); font-size: 1rem; line-height: 1.25; box-shadow: 0 6px 20px rgba(0,0,0,.06);
+}
+.globe-tip .kicker { display: block; margin-bottom: 2px; font-family: var(--sans); }
+.lattice { margin: 8px 0 44px; }
+.lattice canvas { display: block; width: 100%; height: 150px; touch-action: pan-y; cursor: crosshair;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent), linear-gradient(transparent, #000 22%, #000 78%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent), linear-gradient(transparent, #000 22%, #000 78%, transparent);
+  mask-composite: intersect; }
