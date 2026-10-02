@@ -18,6 +18,25 @@ description: Travel notes, photographs and the occasional essay.
   </nav>
 </header>
 
+{%- assign trips = "" | split: "" -%}
+{%- for p in site.posts -%}{%- if p.route -%}{%- assign trips = trips | push: p -%}{%- endif -%}{%- endfor -%}
+{%- if trips.size > 0 %}
+<figure class="globe" data-globe>
+  <canvas role="img" aria-label="A turning globe. The {{ site.data.travel.visited.size | plus: 1 }} countries I have been to are highlighted, and each trip in this journal is a route on it."></canvas>
+  <div class="globe-tip" hidden></div>
+  <figcaption>{{ site.data.travel.visited.size | plus: 1 }} countries so far, highlighted. Drag to turn it; each line is a trip below.</figcaption>
+  <script type="application/json" data-trips>[{% for p in trips %}{"title": {{ p.title | jsonify }}, "url": {{ p.url | relative_url | jsonify }}, "when": {{ p.location | default: p.date | jsonify }}, "route": {{ p.route | jsonify }}}{% unless forloop.last %}, {% endunless %}{% endfor %}]</script>
+</figure>
+<script type="module">
+  const el = document.querySelector("[data-globe]");
+  const load = () => import("{{ '/assets/js/globe.js' | relative_url }}")
+    .then(m => m.mountGlobe(el, JSON.parse(el.querySelector("[data-trips]").textContent)))
+    .catch(() => { el.hidden = true; });
+  const io = new IntersectionObserver(e => { if (e[0].isIntersecting) { io.disconnect(); load(); } }, { rootMargin: "300px" });
+  io.observe(el);
+</script>
+{%- endif %}
+
 {%- assign featured = site.posts | where: "featured", true | first | default: site.posts.first -%}
 
 {%- if featured %}
