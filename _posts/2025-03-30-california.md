@@ -1,4 +1,5 @@
 ---
+avif: true            # AVIF copies exist next to every photo (see README)
 title: Granite, giants and sand
 dek: A week through California in March 2025, from Yosemite to the Pacific and out into the desert.
 category: travel

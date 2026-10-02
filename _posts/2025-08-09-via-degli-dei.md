@@ -1,4 +1,5 @@
 ---
+avif: true            # AVIF copies exist next to every photo (see README)
 title: Bologna to Florence on foot
 dek: The Via degli Dei over the Apennines in August 2025, from San Luca to the Duomo.
 category: travel

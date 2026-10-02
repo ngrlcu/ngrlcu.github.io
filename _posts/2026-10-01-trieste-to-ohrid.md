@@ -1,4 +1,5 @@
 ---
+avif: true            # AVIF copies exist next to every photo (see README)
 title: Trieste to Ohrid
 dek: A road trip down the Balkans in August 2026, across seven countries, on a Nikon and a few rolls of film.
 category: travel
