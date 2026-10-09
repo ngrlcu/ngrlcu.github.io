@@ -38,10 +38,6 @@ links:
   - title: Email
     url: "mailto:l.nigro1836@gmail.com"
 
-# Contact form at the bottom of the About page (FormSubmit: no account needed;
-# the first message triggers a one-time activation email to this address).
-contact_email: l.nigro1836@gmail.com
-
 # ─────────────────────────────────────────────────────────────
 #  Build settings — normally no need to touch
 # ─────────────────────────────────────────────────────────────
