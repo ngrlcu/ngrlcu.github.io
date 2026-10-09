@@ -1,7 +1,5 @@
 # Journal categories: the key is what you write in a post's `category:` field.
 travel:
   title: Travel
-photo:
-  title: Photographs
 notes:
   title: Notes
