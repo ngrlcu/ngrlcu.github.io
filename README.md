@@ -61,9 +61,9 @@ Photo exports:
 
 | File | Long edge | Format | Target weight |
 |---|---|---|---|
-| `NN.jpg` (every photo) | 1600 px | JPEG q 78, progressive, sRGB, metadata stripped | 150–350 KB, never above 500 KB |
+| `NN.jpg` (every photo) | 1920 px long edge (≥ 1080 px short edge; older posts 1600) | JPEG q 78, progressive, sRGB, metadata stripped | 200–550 KB |
 | `cover.jpg` | 2000 px | JPEG q 80 | ≤ 600 KB |
-| `NN-600.avif`, `NN-1000.avif`, `NN.avif` | 600 / 1000 / 1600 px wide | AVIF q 60 | ~ two-thirds of the JPEG |
+| `NN-600.avif`, `NN-1000.avif`, `NN.avif` | 600 / 1000 px wide, full size (set `full_w` in the post) | AVIF q 60 | ~ two-thirds of the JPEG |
 | `cover-1200.avif`, `cover.avif` | 1200 / 2000 px wide | AVIF q 60 | |
 
 Browsers that understand AVIF (nearly all) download only the size they need;
