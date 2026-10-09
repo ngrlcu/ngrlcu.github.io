@@ -2,8 +2,8 @@
 route: [[44.49, 11.34], [44.36, 11.29], [44.09, 11.28], [43.81, 11.29], [43.77, 11.26]]   # [lat, lon] stops, drawn on the journal globe
 avif: true            # AVIF copies exist next to every photo (see README)
 full_w: 1920          # full-size photos are 1920 px on the long edge
-title: Bologna to Florence on foot
-dek: Six days on the Via degli Dei over the Apennines, August 2025.
+title: Via degli Dei
+dek: From Bologna to Florence on foot, August 2025.
 category: travel
 location: Emilia-Romagna → Tuscany
 cover: /assets/img/journal/via-degli-dei-2025/cover.jpg

@@ -3,7 +3,7 @@ route: [[37.75, -119.59], [36.49, -118.57], [36.27, -121.81], [34.90, -115.73], 
 avif: true            # AVIF copies exist next to every photo (see README)
 full_w: 1920          # full-size photos are 1920 px on the long edge
 title: On the road – California
-dek: From the Sierra Nevada to Route 66, March 2025.
+dek: Exploring the national parks, March 2025.
 category: travel
 location: California
 cover: /assets/img/journal/california-2025/cover.jpg
