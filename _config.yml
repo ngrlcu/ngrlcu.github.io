@@ -2,7 +2,7 @@
 #  Site settings — edit these first
 # ─────────────────────────────────────────────────────────────
 title: Luca Nigro
-subtitle: PhD candidate in Physics   # shown in grey under the name in the header
+subtitle: PhD in Physics   # shown in grey under the name in the header
 tagline: Physicist — quantum dynamics, computation, and the odd photograph.
 description: >-
   Luca Nigro — PhD student in physics in Milan, working on analog quantum
@@ -33,11 +33,14 @@ links:
     url: "https://github.com/ngrlcu"
   - title: Instagram
     url: "https://www.instagram.com/luca_nigro_ph/"
-  # Add when ready:
-  # - title: Email
-  #   url: "mailto:name@unimi.it"
-  # - title: ORCID
-  #   url: "https://orcid.org/0000-0000-0000-0000"
+  - title: ORCID
+    url: "https://orcid.org/0009-0004-1219-9608"
+  - title: Email
+    url: "mailto:l.nigro1836@gmail.com"
+
+# Contact form at the bottom of the About page (FormSubmit: no account needed;
+# the first message triggers a one-time activation email to this address).
+contact_email: l.nigro1836@gmail.com
 
 # ─────────────────────────────────────────────────────────────
 #  Build settings — normally no need to touch
