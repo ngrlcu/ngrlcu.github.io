@@ -11,7 +11,7 @@ cover_alt: A walker on a dirt track through a dry, golden meadow under a pale sk
 cover_caption: Past Monte Senario, on the fifth afternoon.
 ---
 
-Six days on foot with a group of friends, from the Neptune fountain in Bologna down to Florence. The Via degli Dei runs for about 130 km over the Apennines, with some 4,700 m of climbing, and takes its name from the mountains along the way: Monte Adone after Adonis, Monzuno from *Mons Iovis*, the mountain of Jupiter, and Monte Venere after Venus.
+Five days on foot with a group of friends, from the Neptune fountain in Bologna down to Florence. The Via degli Dei runs for about 130 km over the Apennines, with some 4,700 m of climbing, and takes its name from the mountains along the way: Monte Adone after Adonis, Monzuno from *Mons Iovis*, the mountain of Jupiter, and Monte Venere after Venus.
 
 ## Day one: Bologna to Badolo
 
@@ -27,9 +27,11 @@ In the afternoon the path follows the Contrafforte Pliocenico, a long wall of sa
 
 {% include figure.html src="/assets/img/journal/via-degli-dei-2025/33.jpg" caption="From the top of Monte Adone." size="full" %}
 
+We slept a little past Badolo.
+
 ## Day two: to Madonna dei Fornelli
 
-The second stage, through Monzuno and up to Madonna dei Fornelli, is the longest and hardest of the whole walk, which is why there are so few photos of it: most of the day went on putting one foot in front of the other.
+The second stage, through Monzuno and up to Madonna dei Fornelli, is the longest and hardest of the whole walk, which is why there are so few photos of it: most of the day went on putting one foot in front of the other. The night was at Madonna dei Fornelli.
 
 {% include figure.html src="/assets/img/journal/via-degli-dei-2025/36.jpg" caption="Between Monzuno and Madonna dei Fornelli." size="wide" %}
 
@@ -45,7 +47,7 @@ From Madonna dei Fornelli the path follows stretches of the Flaminia Militare, a
 
 {% include figure.html src="/assets/img/journal/via-degli-dei-2025/39.jpg" caption="The Banditacce, at about 1,200 m the highest point of the route. Walkers ring the bell when they get here." size="wide" %}
 
-Just before the pass is the German military cemetery of the Futa, the largest German war cemetery in Italy, with about 30,700 soldiers of the Second World War. Dieter Oesterlen designed it as a spiral wall some 2 km long that climbs the hill to a single pointed peak; it was dedicated in 1969. We stopped for the night near the pass.
+Just before the pass is the German military cemetery of the Futa, the largest German war cemetery in Italy, with about 30,700 soldiers of the Second World War. Dieter Oesterlen designed it as a spiral wall some 2 km long that climbs the hill to a single pointed peak; it was dedicated in 1969. That night we slept at the campsite by the pass.
 
 {% include figure.html src="/assets/img/journal/via-degli-dei-2025/09.jpg" caption="The German military cemetery at the Futa Pass." size="wide" %}
 
@@ -65,7 +67,9 @@ After the pass the landscape dries out: stubble, white roads and, lower down, th
 
 {% include figure.html src="/assets/img/journal/via-degli-dei-2025/41.jpg" caption="Sunflowers on the way down to San Piero a Sieve." size="wide" %}
 
-## Day five: Monte Senario
+The fourth night was in San Piero a Sieve.
+
+## Day five: Monte Senario and Florence
 
 {% include gallery.html images="/assets/img/journal/via-degli-dei-2025/17.jpg, /assets/img/journal/via-degli-dei-2025/18.jpg" ratios="0.666, 0.666" caption="Stone houses in the morning shade." size="wide" %}
 
@@ -73,11 +77,11 @@ After the pass the landscape dries out: stubble, white roads and, lower down, th
 
 {% include figure.html src="/assets/img/journal/via-degli-dei-2025/20.jpg" caption="Through the woods to Monte Senario." size="wide" %}
 
-Halfway through the day the path reaches the sanctuary of Monte Senario, at 817 m, home of the Servite friars since the thirteenth century. The first friars lived in the caves around it.
+Halfway through the day the path reaches the sanctuary of Monte Senario, at 817 m, home of the Servite friars since the thirteenth century. The first friars lived in the caves around it. From there the last descent runs down to Florence, where the walk ends and where we stayed two nights.
 
-## Day six: Fiesole and Florence
+## Two days in Florence
 
-The last morning comes down to Fiesole, the old Etruscan and Roman town on the hill above Florence, and from there the whole city is suddenly below you.
+The next morning we went up to Fiesole, the old Etruscan and Roman town on the hill above Florence, where the whole city is suddenly below you.
 
 {% include figure.html src="/assets/img/journal/via-degli-dei-2025/22.jpg" size="wide" %}
 
@@ -85,11 +89,9 @@ The last morning comes down to Fiesole, the old Etruscan and Roman town on the h
 
 {% include gallery.html images="/assets/img/journal/via-degli-dei-2025/24.jpg, /assets/img/journal/via-degli-dei-2025/25.jpg" ratios="0.666, 1.502" caption="Fiesole." size="wide" %}
 
-The first evening in Florence called for a *bistecca alla fiorentina*: a T-bone of Chianina beef, cut thick enough to stand on its bone, grilled over embers with no salt until it is charred outside and still rare within. The name is said to come from the English visitors of the Medici, who called it “beef steak”.
+The second evening in Florence called for a *bistecca alla fiorentina*: a T-bone of Chianina beef, cut thick enough to stand on its bone, grilled over embers with no salt until it is charred outside and still rare within. The name is said to come from the English visitors of the Medici, who called it “beef steak”.
 
 {% include figure.html src="/assets/img/journal/via-degli-dei-2025/43.jpg" caption="Bistecca alla fiorentina, the reward at the end of the walk." size="wide" %}
-
-## Florence
 
 A last day in the city, without backpacks.
 
