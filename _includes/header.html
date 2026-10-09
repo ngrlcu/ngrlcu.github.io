@@ -1,5 +1,8 @@
 <header class="site-header shell {{ include.width }}">
-  <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <a class="site-brand" href="{{ '/' | relative_url }}">
+    <span class="site-name">{{ site.title }}</span>
+    {%- if site.subtitle %}<span class="site-sub">{{ site.subtitle }}</span>{% endif %}
+  </a>
   <nav class="site-nav" aria-label="Main">
     {%- for item in site.data.navigation -%}
       {%- assign active = false -%}
