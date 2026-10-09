@@ -2,6 +2,7 @@
 #  Site settings — edit these first
 # ─────────────────────────────────────────────────────────────
 title: Luca Nigro
+subtitle: PhD candidate in Physics   # shown in grey under the name in the header
 tagline: Physicist — quantum dynamics, computation, and the odd photograph.
 description: >-
   Luca Nigro — PhD student in physics in Milan, working on analog quantum
