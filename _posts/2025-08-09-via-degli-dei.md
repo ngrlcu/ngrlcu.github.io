@@ -27,13 +27,9 @@ In the afternoon the path follows the Contrafforte Pliocenico, a long wall of sa
 
 {% include figure.html src="/assets/img/journal/via-degli-dei-2025/33.jpg" caption="From the top of Monte Adone." size="full" %}
 
-{% include gallery.html images="/assets/img/journal/via-degli-dei-2025/34.jpg, /assets/img/journal/via-degli-dei-2025/35.jpg" ratios="0.5625, 0.75" caption="Me on the summit; the cross, covered in stickers and prayer flags." size="wide" %}
-
-{% include figure.html src="/assets/img/journal/via-degli-dei-2025/05.jpg" caption="Looking back over the valley." size="wide" %}
-
 ## Day two: to Madonna dei Fornelli
 
-The second stage, through Monzuno and up to Madonna dei Fornelli, is the longest and hardest of the walk.
+The second stage, through Monzuno and up to Madonna dei Fornelli, is the longest and hardest of the whole walk, which is why there are so few photos of it: most of the day went on putting one foot in front of the other.
 
 {% include figure.html src="/assets/img/journal/via-degli-dei-2025/36.jpg" caption="Between Monzuno and Madonna dei Fornelli." size="wide" %}
 
@@ -41,13 +37,13 @@ The second stage, through Monzuno and up to Madonna dei Fornelli, is the longest
 
 From Madonna dei Fornelli the path follows stretches of the Flaminia Militare, a Roman road built in 187 BC to cross the Apennines between Bologna and Arezzo, rediscovered by two local enthusiasts only a few decades ago.
 
-{% include gallery.html images="/assets/img/journal/via-degli-dei-2025/37.jpg, /assets/img/journal/via-degli-dei-2025/38.jpg" ratios="0.75, 0.75" caption="Early morning among the conifers; the path has a street sign of its own." size="wide" %}
+{% include figure.html src="/assets/img/journal/via-degli-dei-2025/38.jpg" caption="The path has a street sign of its own." size="wide" %}
 
 {% include figure.html src="/assets/img/journal/via-degli-dei-2025/06.jpg" size="wide" %}
 
-{% include gallery.html images="/assets/img/journal/via-degli-dei-2025/07.jpg, /assets/img/journal/via-degli-dei-2025/08.jpg" ratios="1.502, 1.502" caption="An Ape parked in a clearing; a sign nailed to a tree." size="wide" %}
+{% include gallery.html images="/assets/img/journal/via-degli-dei-2025/46.jpg, /assets/img/journal/via-degli-dei-2025/08.jpg" ratios="0.75, 1.502" caption="Marco and me on an Ape parked in a clearing; a sign nailed to a tree." size="wide" %}
 
-{% include figure.html src="/assets/img/journal/via-degli-dei-2025/39.jpg" caption="Me at a tree covered in walkers’ stickers, with a bell to ring." size="wide" %}
+{% include figure.html src="/assets/img/journal/via-degli-dei-2025/39.jpg" caption="The Banditacce, at about 1,200 m the highest point of the route. Walkers ring the bell when they get here." size="wide" %}
 
 Just before the pass is the German military cemetery of the Futa, the largest German war cemetery in Italy, with about 30,700 soldiers of the Second World War. Dieter Oesterlen designed it as a spiral wall some 2 km long that climbs the hill to a single pointed peak; it was dedicated in 1969. We stopped for the night near the pass.
 
@@ -63,8 +59,6 @@ From the pass the path climbs Monte Gazzaro, 1,125 m. On the top stands a portal
 
 {% include figure.html src="/assets/img/journal/via-degli-dei-2025/13.jpg" caption="The portal on Monte Gazzaro." size="wide" %}
 
-{% include figure.html src="/assets/img/journal/via-degli-dei-2025/40.jpg" caption="Two of the group at the portal." size="wide" %}
-
 After the pass the landscape dries out: stubble, white roads and, lower down, the sunflowers of the Mugello.
 
 {% include gallery.html images="/assets/img/journal/via-degli-dei-2025/14.jpg, /assets/img/journal/via-degli-dei-2025/15.jpg" ratios="1.502, 1.502" caption="White roads down towards the Mugello." size="wide" %}
@@ -73,15 +67,13 @@ After the pass the landscape dries out: stubble, white roads and, lower down, th
 
 ## Day five: Monte Senario
 
-{% include figure.html src="/assets/img/journal/via-degli-dei-2025/16.jpg" size="wide" %}
-
 {% include gallery.html images="/assets/img/journal/via-degli-dei-2025/17.jpg, /assets/img/journal/via-degli-dei-2025/18.jpg" ratios="0.666, 0.666" caption="Stone houses in the morning shade." size="wide" %}
 
 {% include figure.html src="/assets/img/journal/via-degli-dei-2025/19.jpg" size="wide" %}
 
-Halfway through the day the path reaches the sanctuary of Monte Senario, at 817 m, home of the Servite friars since the thirteenth century. The first friars lived in the caves around it.
+{% include figure.html src="/assets/img/journal/via-degli-dei-2025/20.jpg" caption="Through the woods to Monte Senario." size="wide" %}
 
-{% include gallery.html images="/assets/img/journal/via-degli-dei-2025/20.jpg, /assets/img/journal/via-degli-dei-2025/21.jpg" ratios="0.666, 1.502" caption="Through the woods to Monte Senario; at the sanctuary." size="wide" %}
+Halfway through the day the path reaches the sanctuary of Monte Senario, at 817 m, home of the Servite friars since the thirteenth century. The first friars lived in the caves around it.
 
 ## Day six: Fiesole and Florence
 
@@ -93,13 +85,13 @@ The last morning comes down to Fiesole, the old Etruscan and Roman town on the h
 
 {% include gallery.html images="/assets/img/journal/via-degli-dei-2025/24.jpg, /assets/img/journal/via-degli-dei-2025/25.jpg" ratios="0.666, 1.502" caption="Fiesole." size="wide" %}
 
-{% include gallery.html images="/assets/img/journal/via-degli-dei-2025/42.jpg, /assets/img/journal/via-degli-dei-2025/43.jpg" ratios="0.75, 0.75" caption="The first evening in Florence: me, and a bistecca alla fiorentina." size="wide" %}
+The first evening in Florence called for a *bistecca alla fiorentina*: a T-bone of Chianina beef, cut thick enough to stand on its bone, grilled over embers with no salt until it is charred outside and still rare within. The name is said to come from the English visitors of the Medici, who called it “beef steak”.
+
+{% include figure.html src="/assets/img/journal/via-degli-dei-2025/43.jpg" caption="Bistecca alla fiorentina, the reward at the end of the walk." size="wide" %}
 
 ## Florence
 
 A last day in the city, without backpacks.
-
-{% include figure.html src="/assets/img/journal/via-degli-dei-2025/44.jpg" caption="Piazza della Signoria, under Palazzo Vecchio. I’m on the right." size="wide" %}
 
 {% include gallery.html images="/assets/img/journal/via-degli-dei-2025/26.jpg, /assets/img/journal/via-degli-dei-2025/27.jpg" ratios="1.502, 1.502" caption="The Duomo, and the Loggia dei Lanzi." size="wide" %}
 
