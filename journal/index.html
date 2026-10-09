@@ -10,12 +10,19 @@ description: Travel notes, photographs and the occasional essay.
     <h1>Journal</h1>
     <p class="dek">{{ page.description }}</p>
   </div>
+  {%- assign used = 0 -%}
+  {%- for c in site.data.categories -%}{%- assign n = site.posts | where: "category", c[0] -%}{%- if n.size > 0 -%}{%- assign used = used | plus: 1 -%}{%- endif -%}{%- endfor -%}
+  {%- if used > 1 %}
   <nav class="filters" aria-label="Filter entries">
     <button type="button" data-filter="all" aria-pressed="true">All</button>
     {%- for c in site.data.categories %}
+    {%- assign n = site.posts | where: "category", c[0] %}
+    {%- if n.size > 0 %}
     <button type="button" data-filter="{{ c[0] }}" aria-pressed="false">{{ c[1].title }}</button>
+    {%- endif %}
     {%- endfor %}
   </nav>
+  {%- endif %}
 </header>
 
 {%- assign trips = "" | split: "" -%}
