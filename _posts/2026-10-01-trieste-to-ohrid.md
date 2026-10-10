@@ -28,21 +28,21 @@ Just outside the city, Miramare stands on a rock above the gulf. It was built be
 
 ## Slovenia
 
-Two days of cold, green water. The Soča is emerald along its whole length. Hard to imagine, standing in it, that twelve battles of the First World War were fought along this valley between 1915 and 1917. Further north, Lake Jasna sits below the Julian Alps at the foot of the Vršič road, where two mountain streams meet.
+Two days of cold, green water. The Soča is emerald along its whole length, and we stopped for a swim in it, as cold as it looks. Hard to imagine, in the water, that twelve battles of the First World War were fought along this valley between 1915 and 1917.
 
-{% include gallery.html images="/assets/img/journal/balkans-2026/05.jpg, /assets/img/journal/balkans-2026/06.jpg, /assets/img/journal/balkans-2026/07.jpg" ratios="0.662, 0.662, 0.662" caption="Into the gorges: the Soča valley and Vintgar." size="wide" %}
-
-{% include figure.html src="/assets/img/journal/balkans-2026/08.jpg" caption="Lake Jasna, under the Julian Alps." size="full" %}
+{% include gallery.html images="/assets/img/journal/balkans-2026/48.jpg, /assets/img/journal/balkans-2026/49.jpg" ratios="0.662, 1.509" caption="The first gorge; where we went for a swim, under the Julian Alps." size="wide" %}
 
 Near Bled, the Radovna has cut the Vintgar gorge, 1.6 km of boardwalks between vertical walls. It was found in 1891 and opened to visitors two years later. At the end the river drops 13 m over the Šum waterfall. Bled itself is the postcard: a church on the island and a castle on the cliff, first mentioned in 1011.
 
-{% include gallery.html images="/assets/img/journal/balkans-2026/09.jpg, /assets/img/journal/balkans-2026/10.jpg" ratios="0.662, 1.509" caption="Šum waterfall at the end of Vintgar; Bled." size="wide" %}
+{% include gallery.html images="/assets/img/journal/balkans-2026/50.jpg, /assets/img/journal/balkans-2026/51.jpg, /assets/img/journal/balkans-2026/09.jpg" ratios="1.509, 0.662, 0.662" caption="The Vintgar gorge, down to the Šum waterfall." size="wide" %}
+
+{% include figure.html src="/assets/img/journal/balkans-2026/10.jpg" caption="Bled." size="wide" %}
 
 ## The Karst
 
-Back towards the coast for a morning underground, at the Škocjan caves, on the UNESCO list since 1986. Here the Reka river disappears into the limestone and runs through an underground canyon about 2.6 km long and up to 146 m high. The path follows it along the walls of the canyon.
+Back towards the coast for a morning underground, at the Škocjan caves, on the UNESCO list since 1986. Here the Reka river disappears into the limestone and runs through an underground canyon about 2.6 km long and up to 146 m high. Inside it is stunning, but photographs aren’t allowed, so these are only from the way in and the way out.
 
-{% include gallery.html images="/assets/img/journal/balkans-2026/11.jpg, /assets/img/journal/balkans-2026/12.jpg, /assets/img/journal/balkans-2026/13.jpg" ratios="0.666, 0.666, 1.503" caption="Down into the Karst: the Reka underground, the collapse doline, the lit path along the river." size="wide" %}
+{% include gallery.html images="/assets/img/journal/balkans-2026/11.jpg, /assets/img/journal/balkans-2026/12.jpg" ratios="0.666, 0.666" caption="The Reka going underground; the collapse doline." size="wide" %}
 
 ## Plitvice
 
@@ -50,13 +50,17 @@ A full day on the boardwalks of Plitvice, in Croatia: sixteen lakes stepping dow
 
 {% include figure.html src="/assets/img/journal/balkans-2026/14.jpg" caption="Plitvice, early morning." size="full" %}
 
-{% include gallery.html images="/assets/img/journal/balkans-2026/15.jpg, /assets/img/journal/balkans-2026/16.jpg, /assets/img/journal/balkans-2026/17.jpg" ratios="0.666, 0.666, 0.662" caption="Boardwalks, travertine, and water that colour." size="wide" %}
+{% include gallery.html images="/assets/img/journal/balkans-2026/15.jpg, /assets/img/journal/balkans-2026/52.jpg, /assets/img/journal/balkans-2026/17.jpg" ratios="0.666, 0.662, 0.662" caption="Boardwalks over the water, reflections, and the first falls." size="wide" %}
 
-{% include figure.html src="/assets/img/journal/balkans-2026/18.jpg" size="wide" %}
+{% include figure.html src="/assets/img/journal/balkans-2026/53.jpg" caption="Water pouring over the travertine." size="full" %}
+
+{% include gallery.html images="/assets/img/journal/balkans-2026/54.jpg, /assets/img/journal/balkans-2026/55.jpg" ratios="1.504, 1.509" caption="Still water under the travertine banks; reeds standing in water as clear as glass." size="wide" %}
+
+{% include gallery.html images="/assets/img/journal/balkans-2026/56.jpg, /assets/img/journal/balkans-2026/57.jpg" ratios="1.509, 1.504" caption="The lower lakes from the path above; a fall into a green pool." size="wide" %}
 
 {% include figure.html src="/assets/img/journal/balkans-2026/19.jpg" caption="Through the surface: tree roots on the bottom of a lake." size="wide" %}
 
-{% include figure.html src="/assets/img/journal/balkans-2026/21.jpg" caption="Sunset on the way out of the park." %}
+{% include figure.html src="/assets/img/journal/balkans-2026/21.jpg" caption="Sunset on the way out of the park." size="wide" %}
 
 ## Sarajevo
 
@@ -78,13 +82,15 @@ The Gazi Husrev-beg Mosque, built in 1530, is the largest historical mosque in t
 
 South towards the Neretva. At Blagaj the Buna comes out of a cliff, one of the largest karst springs in Europe, and a dervish house has stood beside it since around 1520. In Mostar, the Stari Most was finished in 1566, destroyed in November 1993 and rebuilt in 2004. Young men still dive from it into the river, some twenty metres below.
 
-{% include gallery.html images="/assets/img/journal/balkans-2026/28.jpg, /assets/img/journal/balkans-2026/29.jpg" ratios="0.663, 1.509" caption="The tekke at Blagaj, at the spring of the Buna; the Stari Most in Mostar." size="wide" %}
-
-{% include figure.html src="/assets/img/journal/balkans-2026/30.jpg" %}
+{% include gallery.html images="/assets/img/journal/balkans-2026/28.jpg, /assets/img/journal/balkans-2026/29.jpg, /assets/img/journal/balkans-2026/30.jpg" ratios="0.663, 1.509, 0.662" caption="The tekke at Blagaj, at the spring of the Buna; the Stari Most in Mostar." size="wide" %}
 
 Before leaving Herzegovina we stopped at Kravica, where the Trebižat falls about 25 m in a wide curtain into a green pool.
 
-{% include figure.html src="/assets/img/journal/balkans-2026/31.jpg" caption="Kravica." size="wide" %}
+{% include figure.html src="/assets/img/journal/balkans-2026/58.jpg" caption="Kravica." size="full" %}
+
+{% include gallery.html images="/assets/img/journal/balkans-2026/59.jpg, /assets/img/journal/balkans-2026/60.jpg" ratios="1.509, 0.662" size="wide" %}
+
+{% include gallery.html images="/assets/img/journal/balkans-2026/61.jpg, /assets/img/journal/balkans-2026/62.jpg" ratios="1.509, 1.509" caption="Falls and pools at Kravica." size="wide" %}
 
 ## Sutjeska
 
@@ -100,6 +106,10 @@ Into Montenegro along the Piva, a river turned into a long, narrow lake by the M
 
 {% include figure.html src="/assets/img/journal/balkans-2026/36.jpg" caption="Last light on the cliffs." size="full" %}
 
+We stayed in the valley that night, and after dark the Milky Way rose over the cliffs.
+
+{% include figure.html src="/assets/img/journal/balkans-2026/45.jpg" caption="The Milky Way over the Durmitor valley." size="full" %}
+
 {% include figure.html src="/assets/img/journal/balkans-2026/37.jpg" %}
 
 ## Northern Albania
@@ -112,8 +122,6 @@ Into the Accursed Mountains, Bjeshkët e Nemuna in Albanian: stone villages, riv
 
 {% include figure.html src="/assets/img/journal/balkans-2026/47.jpg" caption="A waterfall in the valley." size="wide" %}
 
-{% include figure.html src="/assets/img/journal/balkans-2026/41.jpg" caption="Over the pass." size="full" %}
-
 ## Ohrid
 
 The last stop, in North Macedonia. Lake Ohrid is one of the oldest and deepest lakes in Europe, at least a couple of million years old and 288 m deep. Above it, on Plaošnik, stands the church of Saints Clement and Panteleimon. St Clement built the first church here at the end of the ninth century, and with his school he helped spread the Cyrillic alphabet. The church you see was rebuilt in 2002.
@@ -121,5 +129,3 @@ The last stop, in North Macedonia. Lake Ohrid is one of the oldest and deepest l
 {% include figure.html src="/assets/img/journal/balkans-2026/42.jpg" caption="Plaošnik, Ohrid." size="wide" %}
 
 {% include gallery.html images="/assets/img/journal/balkans-2026/43.jpg, /assets/img/journal/balkans-2026/44.jpg" ratios="1.509, 1.509" caption="At the church of St Clement; an afternoon by the water." size="wide" %}
-
-{% include figure.html src="/assets/img/journal/balkans-2026/45.jpg" caption="And, one night, the Milky Way." size="full" %}
