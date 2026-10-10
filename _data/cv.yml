@@ -3,7 +3,7 @@
 #  Each section is a list of rows: `when` sits in the left column,
 #  `what` is the bold line, `where` sits beside it, `note` below (Markdown ok).
 # ─────────────────────────────────────────────────────────────
-pdf: ""                    # to offer a download, put a PDF at assets/cv.pdf and set this to /assets/cv.pdf
+pdf: /assets/files/Luca_Nigro_CV.pdf   # downloadable CV, linked from the CV page
 
 sections:
   - title: Experience
