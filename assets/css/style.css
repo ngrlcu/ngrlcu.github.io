@@ -144,6 +144,8 @@ main { min-height: 60vh; }
   transition: color .15s ease, border-color .15s ease;
 }
 .chip:hover { color: var(--fg); border-color: var(--faint); }
+.chip-dl { display: inline-flex; align-items: center; gap: 6px; }
+.chip-dl svg { flex: none; }
 
 /* Year-in-the-gutter rows (News, CV, journal list) */
 .rows .row {
