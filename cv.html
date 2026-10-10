@@ -6,7 +6,7 @@ permalink: /cv/
 <header class="page-head">
   <h1>Curriculum vitae</h1>
   {%- if site.data.cv.pdf and site.data.cv.pdf != "" %}
-  <a class="chip" href="{{ site.data.cv.pdf | relative_url }}">Download PDF</a>
+  <a class="chip chip-dl" href="{{ site.data.cv.pdf | relative_url }}" download="Luca_Nigro_CV.pdf" type="application/pdf"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>Download CV (PDF)</a>
   {%- endif %}
 </header>
 
