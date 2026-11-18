@@ -356,3 +356,7 @@ figcaption {
   mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
 .wave canvas:focus-visible { outline: 1px dotted var(--faint); outline-offset: 4px; }
 .wigner canvas { height: 260px; }
+
+/* Visitor counter, bottom of the About page */
+.visits { margin-top: 3rem; font-size: .8125rem; color: var(--faint); font-variant-numeric: tabular-nums; }
+.visits [data-n] { color: var(--muted); }
