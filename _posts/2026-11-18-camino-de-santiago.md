@@ -7,8 +7,8 @@ dek: The Camino Francés on foot, from Burgos to Santiago, autumn 2026.
 category: travel
 location: Burgos → Santiago de Compostela
 cover: /assets/img/journal/camino-2026/cover.jpg
-cover_alt: A gravel path through the dry grass of the Meseta, with walkers far ahead.
-cover_caption: The Meseta, between Burgos and León.
+cover_alt: A yellow scallop shell and the words Buen Camino painted on the wall of a house.
+cover_caption: Buen Camino, on the Meseta.
 featured: true
 ---
 
@@ -20,19 +20,15 @@ I divide the Camino Francés into four parts.
 
 The beginning that never happened, but one day surely will. The day before setting off, a nasty bout of gastroenteritis sent me back home and the start was postponed. Time was already short, so I had to start again from Burgos, this time successfully, at the end of October.
 
-{% include figure.html src="/assets/img/journal/camino-2026/01.jpg" caption="The first course: a vermouth in Burgos, the evening before setting off." %}
-
 ## The Meseta: Burgos to León
 
 About 180 km across the high plateau of Castile: long straight tracks, a wide horizon and little shade. On the second morning the path runs straight under the arches of San Antón, the ruins of a fourteenth-century convent of the Antonine friars, who cared for pilgrims suffering from "St Anthony's fire", a poisoning caused by a fungus in rye bread.
 
 {% include figure.html src="/assets/img/journal/camino-2026/02.jpg" caption="A painted barn on the first morning out of Burgos." size="wide" %}
 
-{% include figure.html src="/assets/img/journal/camino-2026/04.jpg" caption="The climb out of the Castrojeriz valley." size="wide" %}
-
 {% include figure.html src="/assets/img/journal/camino-2026/35.jpg" caption="Sunset from an albergue a few days out of Burgos." %}
 
-{% include gallery.html images="/assets/img/journal/camino-2026/05.jpg, /assets/img/journal/camino-2026/06.jpg" ratios="1.509, 1.509" caption="Villages of the Meseta." size="wide" %}
+{% include figure.html src="/assets/img/journal/camino-2026/06.jpg" caption="Villages of the Meseta." size="wide" %}
 
 {% include figure.html src="/assets/img/journal/camino-2026/07.jpg" size="full" %}
 
@@ -50,9 +46,9 @@ At Frómista the path meets the Canal de Castilla, begun in the eighteenth centu
 
 This was the most "spiritual" part. Between *donativo* albergues, where you give what you can, and private ones, this is where I felt the Camino's real spirit of welcome and sharing: dinner together, a moment of reflection, lights out at ten.
 
-{% include figure.html src="/assets/img/journal/camino-2026/19.jpg" caption="Buen Camino." size="wide" %}
+{% include figure.html src="/assets/img/journal/camino-2026/19.jpg" size="wide" %}
 
-{% include gallery.html images="/assets/img/journal/camino-2026/20.jpg, /assets/img/journal/camino-2026/21.jpg, /assets/img/journal/camino-2026/25.jpg" ratios="0.75, 0.75, 0.75" caption="A window in a mud-brick wall; the evening timetable of a donativo albergue; a house covered in pilgrims’ graffiti." size="wide" %}
+{% include gallery.html images="/assets/img/journal/camino-2026/20.jpg, /assets/img/journal/camino-2026/25.jpg" ratios="0.75, 0.75" caption="A window in a mud-brick wall; a house covered in pilgrims’ graffiti." size="wide" %}
 
 {% include figure.html src="/assets/img/journal/camino-2026/23.jpg" size="wide" %}
 
@@ -90,9 +86,9 @@ As every forecast predicted, Galicia welcomed us with rain. But the rain gave us
 
 The last 116 km are the most famous, most walked and most commercial part of the route, because 100 km on foot is the minimum to receive the Compostela. The main difficulty was finding a way to dry wet clothes, and shoes. But there is little climbing, so we managed a 40 km stage, from Triacastela through Sarria to Portomarín. We set off in the dark and arrived in the evening, in very low cloud and rain, with a Harry Potter atmosphere.
 
-{% include gallery.html images="/assets/img/journal/camino-2026/45.jpg, /assets/img/journal/camino-2026/46.jpg" ratios="1.333, 1.333" caption="Leaving before dawn; fog in the valleys." size="wide" %}
+{% include figure.html src="/assets/img/journal/camino-2026/45.jpg" caption="Leaving before dawn." size="wide" %}
 
-{% include gallery.html images="/assets/img/journal/camino-2026/47.jpg, /assets/img/journal/camino-2026/50.jpg" ratios="0.75, 0.75" caption="One of the milestones counting down to Santiago; one morning we set off without breakfast, and after two hours and 10 km this appeared." size="wide" %}
+{% include figure.html src="/assets/img/journal/camino-2026/47.jpg" caption="One of the milestones counting down to Santiago." %}
 
 {% include figure.html src="/assets/img/journal/camino-2026/48.jpg" caption="Arriving in Portomarín after dark, across the bridge over the Miño." size="wide" %}
 
@@ -104,6 +100,4 @@ The town itself was moved. In the 1960s the Miño was dammed to create the Beles
 
 When we arrived, the sky miraculously opened above our heads for a few minutes. That was just long enough for the customary photos, and to enjoy the moment we had waited for so long.
 
-{% include gallery.html images="/assets/img/journal/camino-2026/51.jpg, /assets/img/journal/camino-2026/52.jpg" ratios="0.751, 0.75" caption="In front of the cathedral; the shoes, after the last kilometre." size="wide" %}
-
-{% include gallery.html images="/assets/img/journal/camino-2026/53.jpg, /assets/img/journal/camino-2026/54.jpg" ratios="0.75, 0.75" caption="With the Compostela; and the last course, churros con chocolate." size="wide" %}
+{% include gallery.html images="/assets/img/journal/camino-2026/52.jpg, /assets/img/journal/camino-2026/53.jpg" ratios="0.75, 0.75" caption="The shoes, after the last kilometre; with the Compostela, in front of the cathedral." size="wide" %}
